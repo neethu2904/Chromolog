@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chromolog | Smart Digital Solutions</title>
+  <title>Chromolog | AI-Powered Digital Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
@@ -310,7 +310,7 @@
     }
 
     section {
-      padding: 56px 0;
+      padding: 46px 0;
     }
 
     .eyebrow {
@@ -338,7 +338,7 @@
     }
 
     .hero {
-      padding-top: 42px;
+      padding-top: 28px;
     }
 
     .hero-grid,
@@ -347,7 +347,7 @@
     .panel-tiles,
     .contact-grid {
       display: grid;
-      gap: 16px;
+      gap: 14px;
     }
 
     .hero-grid {
@@ -407,16 +407,16 @@
 
     .hero-copy > p {
       max-width: 620px;
-      margin-top: 14px;
-      font-size: 18px;
+      margin-top: 12px;
+      font-size: 17px;
     }
 
     .hero-actions {
-      margin-top: 20px;
+      margin-top: 16px;
     }
 
     .hero-stats {
-      margin-top: 22px;
+      margin-top: 18px;
     }
 
     .hero-shell,
@@ -435,15 +435,15 @@
     .hero-shell,
     .contact-card,
     .contact-side {
-      padding: 24px;
+      padding: 20px;
     }
 
     .stat,
     .tile,
     .service,
     .step {
-      padding: 18px;
-      border-radius: 24px;
+      padding: 16px;
+      border-radius: 22px;
       background: rgba(255, 255, 255, 0.82);
     }
 
@@ -458,7 +458,7 @@
     .stat strong,
     .service h3,
     .step h3 {
-      font-size: 22px;
+      font-size: 20px;
     }
 
     .stat span,
@@ -529,8 +529,8 @@
       display: flex;
       align-items: center;
       gap: 18px;
-      margin: 14px 0 16px;
-      padding: 18px 20px;
+      margin: 12px 0 14px;
+      padding: 16px 18px;
       border-radius: 24px;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(240, 248, 255, 0.9));
       border: 1px solid rgba(44, 168, 255, 0.1);
@@ -567,17 +567,23 @@
 
     .section-head {
       max-width: 720px;
-      margin-bottom: 22px;
+      margin-bottom: 18px;
     }
 
     .section-head p {
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
-    .services,
-    .steps,
+    .steps {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
     .panel-tiles {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .services {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     .service i,
@@ -604,7 +610,7 @@
     }
 
     .contact-wrap {
-      padding: 56px 0 0;
+      padding: 46px 0 0;
     }
 
     .contact-grid {
@@ -655,8 +661,8 @@
 
     .contact-list {
       display: grid;
-      gap: 14px;
-      margin-top: 20px;
+      gap: 12px;
+      margin-top: 16px;
     }
 
     .contact-item {
@@ -680,7 +686,7 @@
     }
 
     .footer {
-      padding-top: 16px;
+      padding-top: 14px;
       border-top: 1px solid rgba(18, 37, 64, 0.08);
     }
 
@@ -692,7 +698,7 @@
       display: grid;
       grid-template-columns: repeat(2, minmax(170px, 1fr));
       gap: 12px;
-      width: min(420px, 100%);
+      width: min(560px, 100%);
       justify-content: flex-end;
     }
 
@@ -765,6 +771,281 @@
       color: var(--muted);
     }
 
+    .trust-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(18, 37, 64, 0.05);
+      border: 1px solid rgba(18, 37, 64, 0.08);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .trust-line::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue-deep), var(--green));
+    }
+
+    .banner-shell {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      color: #ffffff;
+      background: linear-gradient(135deg, rgba(12, 116, 235, 0.96), rgba(44, 168, 255, 0.92), rgba(35, 198, 133, 0.9));
+      box-shadow: 0 24px 38px rgba(12, 116, 235, 0.2);
+    }
+
+    .banner-shell::before,
+    .banner-shell::after {
+      display: none;
+    }
+
+    .banner-copy,
+    .banner-copy p {
+      color: #ffffff;
+    }
+
+    .banner-copy p {
+      margin-top: 10px;
+      max-width: 56ch;
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    .banner-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .banner-actions .btn {
+      border-color: rgba(255, 255, 255, 0.24);
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      box-shadow: none;
+    }
+
+    .banner-actions .btn.primary {
+      background: #ffffff;
+      color: var(--blue-deep);
+    }
+
+    .feature-grid,
+    .client-grid,
+    .why-grid,
+    .preview-grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .feature-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .client-grid {
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    }
+
+    .why-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .preview-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .preview-card {
+      min-width: 0;
+    }
+
+    .preview-shell {
+      margin-top: 14px;
+      min-height: 228px;
+      padding: 14px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(237, 245, 255, 0.94));
+      border: 1px solid rgba(44, 168, 255, 0.12);
+      overflow: hidden;
+    }
+
+    .preview-top {
+      display: flex;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+
+    .preview-top span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(18, 37, 64, 0.16);
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .dashboard-stat,
+    .dashboard-panel,
+    .job-sidebar,
+    .job-main,
+    .phone-header,
+    .phone-card,
+    .phone-bottom {
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(18, 37, 64, 0.08);
+    }
+
+    .dashboard-stat,
+    .dashboard-panel,
+    .job-main,
+    .phone-header,
+    .phone-card {
+      padding: 14px;
+    }
+
+    .dashboard-stat strong,
+    .dashboard-panel strong,
+    .phone-card strong,
+    .job-main strong {
+      display: block;
+      color: var(--navy);
+      font-size: 18px;
+    }
+
+    .dashboard-stat small,
+    .phone-card small,
+    .job-main small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .dashboard-panel {
+      grid-column: 1 / -1;
+      min-height: 122px;
+    }
+
+    .mini-chart {
+      display: flex;
+      align-items: end;
+      gap: 10px;
+      height: 74px;
+      margin-top: 12px;
+    }
+
+    .mini-chart span {
+      flex: 1 1 0;
+      border-radius: 999px 999px 8px 8px;
+      background: linear-gradient(180deg, var(--blue-deep), rgba(122, 229, 74, 0.86));
+    }
+
+    .mini-chart span:nth-child(1) {
+      height: 40%;
+    }
+
+    .mini-chart span:nth-child(2) {
+      height: 58%;
+    }
+
+    .mini-chart span:nth-child(3) {
+      height: 84%;
+    }
+
+    .mini-chart span:nth-child(4) {
+      height: 66%;
+    }
+
+    .phone-shell {
+      width: min(186px, 100%);
+      margin: 0 auto;
+      padding: 12px;
+      border-radius: 32px;
+      background: linear-gradient(180deg, #152644, #0f1828);
+      box-shadow: 0 20px 34px rgba(15, 24, 40, 0.24);
+    }
+
+    .phone-screen {
+      min-height: 206px;
+      padding: 14px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, #ffffff, #eef5ff);
+    }
+
+    .phone-card {
+      margin-top: 12px;
+    }
+
+    .phone-bottom {
+      margin-top: 12px;
+      height: 18px;
+      display: grid;
+      place-items: center;
+    }
+
+    .phone-bottom::before {
+      content: "";
+      width: 60px;
+      height: 5px;
+      border-radius: 999px;
+      background: rgba(18, 37, 64, 0.18);
+    }
+
+    .job-layout {
+      display: grid;
+      grid-template-columns: 108px 1fr;
+      gap: 12px;
+      min-height: 188px;
+    }
+
+    .job-sidebar {
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .job-sidebar span,
+    .job-list li {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(44, 168, 255, 0.08);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .job-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .job-list li {
+      background: rgba(247, 251, 255, 0.94);
+      border: 1px solid rgba(18, 37, 64, 0.06);
+    }
+
+    .job-list small {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
     .reveal {
       opacity: 0;
       transform: translateY(24px);
@@ -810,6 +1091,13 @@
         grid-template-columns: 1fr;
       }
 
+      .feature-grid,
+      .client-grid,
+      .why-grid,
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
       .nav .menu {
         display: none;
       }
@@ -836,19 +1124,28 @@
         width: 100%;
         justify-content: flex-start;
       }
+
+      .banner-shell {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .showcase {
+        align-items: flex-start;
+      }
     }
 
     @media (max-width: 760px) {
       .container {
-        width: min(100vw - 28px, 1160px);
+        width: min(100vw - 22px, 1160px);
       }
 
       .topbar .container {
-        width: min(100vw - 20px, 1160px);
+        width: min(100vw - 14px, 1160px);
       }
 
       section {
-        padding: 42px 0;
+        padding: 32px 0;
       }
 
       .nav,
@@ -870,8 +1167,8 @@
 
       .hero-brand {
         width: 100%;
-        padding: 16px;
-        border-radius: 24px;
+        padding: 14px;
+        border-radius: 22px;
       }
 
       .hero-brand img {
@@ -884,40 +1181,49 @@
       .steps,
       .panel-tiles,
       .contact-grid {
-        gap: 14px;
+        gap: 12px;
+      }
+
+      .feature-grid,
+      .client-grid,
+      .why-grid,
+      .preview-grid {
+        gap: 12px;
       }
 
       .section-head {
-        margin-bottom: 18px;
+        margin-bottom: 14px;
       }
 
       .hero-actions {
-        margin-top: 16px;
+        margin-top: 14px;
       }
 
       .hero-stats {
-        margin-top: 18px;
+        margin-top: 14px;
       }
 
       .contact-wrap {
-        padding: 42px 0 0;
+        padding: 32px 0 0;
       }
 
       .hero-actions,
-      .contact-actions {
+      .contact-actions,
+      .banner-actions {
         flex-direction: column;
         align-items: stretch;
       }
 
       .hero-actions .btn,
       .contact-actions .btn,
+      .banner-actions .btn,
       .contact-note,
       #formStatus {
         width: 100%;
       }
 
       .showcase {
-        padding: 16px;
+        padding: 14px;
       }
 
       .logo-mark-wrap {
@@ -947,6 +1253,14 @@
         font-size: 11px;
       }
 
+      .service,
+      .step,
+      .stat,
+      .tile,
+      .preview-card {
+        padding: 14px;
+      }
+
       .loader-shell {
         padding: 26px 20px 20px;
         border-radius: 28px;
@@ -955,15 +1269,15 @@
 
     @media (max-width: 620px) {
       .container {
-        width: min(100vw - 22px, 1160px);
+        width: min(100vw - 18px, 1160px);
       }
 
       section {
-        padding: 34px 0;
+        padding: 24px 0;
       }
 
       .hero {
-        padding-top: 22px;
+        padding-top: 14px;
       }
 
       .brand-logo {
@@ -983,8 +1297,8 @@
       .hero-shell,
       .contact-card,
       .contact-side {
-        padding: 18px;
-        border-radius: 24px;
+        padding: 16px;
+        border-radius: 22px;
       }
 
       .eyebrow,
@@ -995,21 +1309,33 @@
       }
 
       .section-head {
-        margin-bottom: 14px;
+        margin-bottom: 12px;
       }
 
       .showcase {
-        margin: 12px 0 14px;
+        margin: 10px 0 12px;
         flex-direction: column;
         align-items: flex-start;
       }
 
+      .showcase .btn {
+        width: 100%;
+      }
+
       .contact-wrap {
-        padding: 34px 0 0;
+        padding: 24px 0 0;
       }
 
       .contact-item {
-        padding: 14px;
+        padding: 12px;
+      }
+
+      .job-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .footer-nav {
@@ -1031,7 +1357,24 @@
       }
 
       h1 {
-        font-size: clamp(38px, 13vw, 58px);
+        font-size: clamp(34px, 11vw, 48px);
+      }
+
+      h2 {
+        font-size: clamp(26px, 8vw, 34px);
+      }
+
+      .hero-copy > p,
+      .section-head p,
+      .contact-card p,
+      .contact-side p {
+        font-size: 15px;
+      }
+
+      .service h3,
+      .step h3,
+      .stat strong {
+        font-size: 18px;
       }
     }
 
@@ -1042,28 +1385,28 @@
       }
 
       .container {
-        width: min(100vw - 18px, 1160px);
+        width: min(100vw - 14px, 1160px);
       }
 
       section {
-        padding: 28px 0;
+        padding: 20px 0;
       }
 
       .hero {
-        padding-top: 18px;
+        padding-top: 10px;
       }
 
       .section-head {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
       }
 
       .hero-actions,
       .hero-stats {
-        margin-top: 14px;
+        margin-top: 12px;
       }
 
       .contact-wrap {
-        padding: 28px 0 0;
+        padding: 20px 0 0;
       }
 
       .hero-brand img {
@@ -1076,11 +1419,32 @@
       }
 
       h1 {
-        font-size: clamp(34px, 11vw, 44px);
+        font-size: clamp(30px, 10.4vw, 40px);
       }
 
       h2 {
-        font-size: clamp(28px, 9vw, 36px);
+        font-size: clamp(24px, 8vw, 32px);
+      }
+
+      .hero-shell,
+      .contact-card,
+      .contact-side,
+      .service,
+      .step,
+      .stat,
+      .tile,
+      .preview-card {
+        padding: 13px;
+      }
+
+      .btn {
+        min-height: 44px;
+        padding: 0 16px;
+        border-radius: 16px;
+      }
+
+      .dashboard-grid {
+        grid-template-columns: 1fr;
       }
     }
 
@@ -1103,7 +1467,7 @@
         <img class="loader-mark" src="images/logo2.png" alt="" />
       </div>
       <img class="loader-wordmark" src="images/logo1.jpeg" alt="Chromolog" />
-      <p class="loader-copy">Preparing smart digital solutions with the Chromolog identity.</p>
+      <p class="loader-copy">Preparing AI-powered products and digital systems from Chromolog.</p>
       <div class="loader-bar" aria-hidden="true"><span></span></div>
     </div>
   </div>
@@ -1117,14 +1481,15 @@
 
         <nav class="menu" aria-label="Site sections">
           <a href="#about">About</a>
+          <a href="#product">Product</a>
           <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
+          <a href="#clients">Who We Serve</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <div class="actions">
-          <a class="btn" href="#services">Our Services</a>
-          <a class="btn primary" href="#contact">Contact Us</a>
+          <a class="btn" href="#product">View Product</a>
+          <a class="btn primary" href="#contact">Request Demo</a>
           <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
             <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
@@ -1134,8 +1499,9 @@
       <div class="drawer" id="drawer">
         <nav>
           <a href="#about">About</a>
+          <a href="#product">Product</a>
           <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
+          <a href="#clients">Who We Serve</a>
           <a href="#contact">Contact</a>
         </nav>
       </div>
@@ -1150,35 +1516,37 @@
             <div class="hero-brand">
               <img src="images/logo1.jpeg" alt="Chromolog logo" />
             </div>
-            <span class="eyebrow" style="margin-top: 18px;">Chromolog</span>
-            <h1>Professional digital solutions for modern organizations</h1>
-            <p>Chromolog delivers web development, mobile applications, and custom software with a refined visual language, dependable execution, and a clear focus on business value.</p>
+            <span class="eyebrow" style="margin-top: 18px;">AI-Powered Product &amp; Service Company</span>
+            <h1>Smart Digital Solutions for Modern Institutions &amp; Businesses</h1>
+            <p>We design and build AI-powered platforms, web and mobile applications, and custom software solutions tailored for colleges, training institutes, and enterprises.</p>
+
+            <div class="trust-line">Secure &bull; Scalable &bull; Reliable</div>
 
             <div class="hero-actions">
-              <a class="btn primary" href="#services"><i class="ri-layout-grid-fill" aria-hidden="true"></i>Explore Services</a>
-              <a class="btn" href="#approach"><i class="ri-rocket-line" aria-hidden="true"></i>Our Approach</a>
+              <a class="btn primary" href="#contact"><i class="ri-rocket-line" aria-hidden="true"></i>Request Demo</a>
+              <a class="btn" href="#product"><i class="ri-layout-grid-fill" aria-hidden="true"></i>View Our Product</a>
             </div>
 
             <div class="hero-stats">
               <div class="stat">
-                <strong>Professional Delivery</strong>
-                <span>Clear process, disciplined execution, and reliable outcomes.</span>
+                <strong>AI-Powered Platforms</strong>
+                <span>Intelligent software that improves workflows, automation, and performance visibility.</span>
               </div>
               <div class="stat">
-                <strong>Elegant Design</strong>
-                <span>Modern interfaces shaped for clarity, trust, and usability.</span>
+                <strong>Web &amp; Mobile Apps</strong>
+                <span>Secure applications tailored for educational institutions, startups, and enterprise teams.</span>
               </div>
               <div class="stat">
-                <strong>Custom Solutions</strong>
-                <span>Web, mobile, and software tailored to each requirement.</span>
+                <strong>Product + Service Approach</strong>
+                <span>We create scalable products while also building custom software around your exact needs.</span>
               </div>
             </div>
           </div>
 
           <aside class="hero-shell reveal">
             <div class="hero-top">
-              <span class="eyebrow">Digital Expertise</span>
-              <span class="pill">Trusted Delivery</span>
+              <span class="eyebrow">Chromolog Ecosystem</span>
+              <span class="pill">Secure &bull; Scalable &bull; Reliable</span>
             </div>
 
             <div class="showcase">
@@ -1186,30 +1554,30 @@
                 <img src="images/logo2.png" alt="Chromolog logo mark" />
               </div>
               <div>
-                <strong>Smart Digital Solutions</strong>
-                <p>Brand-led digital products built with calm visual design and dependable execution.</p>
+                <strong>Our Flagship Product</strong>
+                <p>Alphagrew is built for campus placements, training workflows, interview readiness, and performance analytics.</p>
               </div>
             </div>
 
-            <h2>What We Deliver</h2>
-            <p style="margin-top: 12px;">We create polished digital experiences supported by strong structure, thoughtful design, and technology chosen for long-term value.</p>
+            <h2>Alphagrew + Custom Digital Platforms</h2>
+            <p style="margin-top: 12px;">From placement automation and mock interviews to CRM, LMS, HRM, and custom business systems, we help organizations move faster with software that fits how they work.</p>
 
             <div class="panel-tiles" style="margin-top: 20px;">
               <div class="tile">
-                <strong>Websites</strong>
-                <span>Clean, modern websites for brands and businesses.</span>
+                <strong>Placement Automation</strong>
+                <span>Manage job postings, filtering, applications, and interview readiness in one workflow.</span>
               </div>
               <div class="tile">
-                <strong>Mobile Apps</strong>
-                <span>Simple user-friendly mobile experiences.</span>
+                <strong>AI Readiness Tools</strong>
+                <span>Resume analysis, mock interviews, tests, and scoring built into the product journey.</span>
               </div>
               <div class="tile">
-                <strong>Business Systems</strong>
-                <span>Custom tools to manage operations and workflows.</span>
+                <strong>Institution Systems</strong>
+                <span>CRM, LMS, HRM, and operational software designed for structured organizations.</span>
               </div>
               <div class="tile">
-                <strong>Dashboards</strong>
-                <span>Clear reporting and data visibility for teams.</span>
+                <strong>Web &amp; Mobile Delivery</strong>
+                <span>Responsive applications and cross-platform experiences for users on every device.</span>
               </div>
             </div>
           </aside>
@@ -1220,26 +1588,103 @@
     <section id="about">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">About Chromolog</span>
-          <h2 style="margin-top: 14px;">A clean Chromolog identity with your actual logo integrated into the page.</h2>
-          <p>The header, hero, and footer now use the image logo from your `images` folder so the page feels closer to the provided reference and brand identity.</p>
+          <span class="eyebrow">Who We Are</span>
+          <h2 style="margin-top: 14px;">Product-driven technology built to solve real operational challenges.</h2>
+          <p>Chromolog is a product-driven IT solutions company focused on building intelligent, scalable, and user-friendly digital systems.</p>
+          <p>We specialize in developing AI-powered platforms, enterprise software, and mobile applications that solve real-world challenges for educational institutions and businesses.</p>
         </div>
 
         <div class="steps">
           <article class="step reveal">
             <span class="step-no">1</span>
-            <h3>Real Branding</h3>
-            <p>The placeholder logo has been replaced with your actual Chromolog logo image.</p>
+            <h3>Intelligent Systems</h3>
+            <p>We design practical digital products that bring AI-powered features into real workflows.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">2</span>
-            <h3>Cleaner Presentation</h3>
-            <p>The full logo is now featured in the main brand areas, with the icon used as a visual accent.</p>
+            <h3>Scalable Architecture</h3>
+            <p>Our platforms are built to support growth across institutions, teams, and expanding operations.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">3</span>
-            <h3>Mobile Ready</h3>
-            <p>The updated logo sizing stays readable across desktop and smaller screens.</p>
+            <h3>User-Friendly Experiences</h3>
+            <p>We focus on clean, usable interfaces that help teams adopt systems with confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Demo banner">
+      <div class="container">
+        <div class="hero-shell banner-shell reveal">
+          <div class="banner-copy">
+            <span class="eyebrow" style="background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.22); color: #ffffff;">Free Demo</span>
+            <h2 style="margin-top: 14px;">Book a Free Demo of Alphagrew Today</h2>
+            <p>See how Alphagrew simplifies placement management, improves interview readiness, and gives your team clearer visibility across the student placement journey.</p>
+          </div>
+          <div class="banner-actions">
+            <a class="btn primary" href="#contact">Request Demo</a>
+            <a class="btn" href="#product">View Our Product</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="product">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Flagship Product</span>
+          <h2 style="margin-top: 14px;">Alphagrew</h2>
+          <p>Alphagrew is an AI-powered placement and training platform designed for colleges and training institutes to streamline placement processes and enhance student interview readiness.</p>
+          <p>From job postings to mock interviews and performance analytics, Alphagrew provides a complete digital ecosystem for campus placements.</p>
+        </div>
+
+        <div class="showcase reveal">
+          <div class="logo-mark-wrap">
+            <img src="images/logo2.png" alt="Chromolog logo mark" />
+          </div>
+          <div>
+            <strong>Alphagrew</strong>
+            <p>AI-powered placement and training software that connects job management, student practice, analytics, and interview readiness in one system.</p>
+          </div>
+          <a class="btn primary" href="#contact">Request Demo</a>
+        </div>
+
+        <div class="feature-grid">
+          <article class="service reveal">
+            <i class="ri-filter-3-line" aria-hidden="true"></i>
+            <h3>Smart Eligibility &amp; Auto Filtering</h3>
+            <p>Automatically identify eligible students and reduce manual filtering across placement workflows.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-briefcase-4-line" aria-hidden="true"></i>
+            <h3>Job &amp; Application Management</h3>
+            <p>Publish jobs, collect applications, and track student progress through one central system.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-file-search-line" aria-hidden="true"></i>
+            <h3>Resume Analyzer (AI-powered)</h3>
+            <p>Use AI assistance to assess resumes, highlight issues, and guide profile improvement.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-chat-check-line" aria-hidden="true"></i>
+            <h3>Mock Interviews &amp; Practice Tests</h3>
+            <p>Prepare students with structured interview practice and skill-building assessments.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-bar-chart-grouped-line" aria-hidden="true"></i>
+            <h3>Student Performance Analytics</h3>
+            <p>Track readiness, participation, and performance patterns with clear visual insights.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-speed-up-line" aria-hidden="true"></i>
+            <h3>Interview Readiness Score</h3>
+            <p>Measure student preparedness with a focused score that supports training and placement decisions.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-notification-3-line" aria-hidden="true"></i>
+            <h3>Push Notifications</h3>
+            <p>Keep students informed about job updates, interviews, deadlines, and training activities.</p>
           </article>
         </div>
       </div>
@@ -1248,69 +1693,213 @@
     <section id="services">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Core Services</span>
-          <h2 style="margin-top: 14px;">Services designed to support growth with clarity and confidence.</h2>
-          <p>Each offering is structured to deliver practical value through refined design, thoughtful development, and dependable execution.</p>
+          <span class="eyebrow">Our Services</span>
+          <h2 style="margin-top: 14px;">Tailored digital solutions across products, platforms, and operational systems.</h2>
+          <p>We design, build, and support software systems that match the way institutions and businesses actually work.</p>
         </div>
 
         <div class="services">
           <article class="service reveal">
-            <i class="ri-window-line" aria-hidden="true"></i>
-            <h3>Web Development</h3>
-            <p>Branded, responsive websites and web applications that look modern and feel clear.</p>
-          </article>
-          <article class="service reveal">
-            <i class="ri-smartphone-line" aria-hidden="true"></i>
-            <h3>Mobile Apps</h3>
-            <p>Simple, user-friendly mobile experiences tailored to business and customer needs.</p>
-          </article>
-          <article class="service reveal">
-            <i class="ri-code-box-line" aria-hidden="true"></i>
-            <h3>Custom Software</h3>
-            <p>Tailored systems for workflows, reporting, integrations, and long-term growth.</p>
-          </article>
-          <article class="service reveal">
             <i class="ri-customer-service-2-line" aria-hidden="true"></i>
-            <h3>CRM Solutions</h3>
-            <p>Relationship-focused tools for leads, operations, service, and visibility.</p>
+            <h3>CRM Development</h3>
+            <p>We build custom Customer Relationship Management systems to streamline business operations, improve customer engagement, and increase efficiency.</p>
           </article>
           <article class="service reveal">
             <i class="ri-book-open-line" aria-hidden="true"></i>
-            <h3>LMS Platforms</h3>
-            <p>Learning experiences for courses, assessments, content delivery, and analytics.</p>
+            <h3>LMS Development</h3>
+            <p>We develop scalable Learning Management Systems for educational institutions and training centers to manage courses, assessments, and student performance.</p>
           </article>
           <article class="service reveal">
-            <i class="ri-flashlight-line" aria-hidden="true"></i>
-            <h3>MVP Launches</h3>
-            <p>Fast builds designed to help teams validate ideas and move to market quickly.</p>
+            <i class="ri-team-line" aria-hidden="true"></i>
+            <h3>HRM Systems</h3>
+            <p>Our HRM solutions simplify employee management, payroll, attendance tracking, and HR workflows.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-window-line" aria-hidden="true"></i>
+            <h3>Web Application Development</h3>
+            <p>We create modern, scalable, and secure web applications using the latest technologies tailored to your business needs.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-smartphone-line" aria-hidden="true"></i>
+            <h3>Mobile App Development</h3>
+            <p>We build high-performance Android and iOS applications using cross-platform technologies like Flutter.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-code-box-line" aria-hidden="true"></i>
+            <h3>Custom Software Development</h3>
+            <p>We design and develop custom software solutions that align perfectly with your unique business requirements.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="approach">
+    <section id="clients">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Our Approach</span>
-          <h2 style="margin-top: 14px;">A clear process that keeps delivery professional and well managed.</h2>
-          <p>We combine careful planning, elegant design decisions, and disciplined development to make every project feel polished and purposeful.</p>
+          <span class="eyebrow">Who We Serve</span>
+          <h2 style="margin-top: 14px;">Tailored digital systems for institutions, fast-moving teams, and growing businesses.</h2>
+          <p>We work with a wide range of clients to deliver tailored digital solutions:</p>
         </div>
 
-        <div class="steps">
+        <div class="client-grid">
           <article class="step reveal">
             <span class="step-no">1</span>
-            <h3>Discover</h3>
-            <p>We begin by understanding your business, audience, and project priorities.</p>
+            <h3>Colleges &amp; Universities</h3>
+            <p>Digital platforms for placements, academics, administration, and student engagement.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">2</span>
-            <h3>Design &amp; Build</h3>
-            <p>We translate the plan into a polished website, app, or business platform.</p>
+            <h3>Training Institutes</h3>
+            <p>Learning, practice, and performance systems that help training teams operate at scale.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">3</span>
-            <h3>Launch &amp; Support</h3>
-            <p>We support launch and continue refining the experience as needs evolve.</p>
+            <h3>Startups</h3>
+            <p>Web, mobile, and product builds designed to move quickly without losing structure.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">4</span>
+            <h3>Enterprises</h3>
+            <p>Operational software, automation, and business systems tailored to larger workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Choose Chromolog</span>
+          <h2 style="margin-top: 14px;">A technology partner focused on practical outcomes, scalability, and long-term value.</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="step reveal">
+            <span class="step-no">1</span>
+            <h3>Product + Service Approach</h3>
+            <p>We don't just build projects, we create scalable products and solutions that can evolve with your organization.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">2</span>
+            <h3>AI-Powered Solutions</h3>
+            <p>We integrate intelligent features to enhance performance, automation, and smarter decision-making.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">3</span>
+            <h3>Scalable Architecture</h3>
+            <p>Our systems are designed to grow with your organization, users, and future requirements.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">4</span>
+            <h3>Client-Centric Development</h3>
+            <p>We build solutions tailored to your exact requirements instead of forcing generic workflows.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">5</span>
+            <h3>End-to-End Support</h3>
+            <p>From idea to deployment and maintenance, we support you through the full delivery journey.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="preview">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Product Preview</span>
+          <h2 style="margin-top: 14px;">See how Alphagrew can look across core workflows.</h2>
+          <p>Explore how Alphagrew simplifies placement management and enhances student performance through an intuitive and powerful interface.</p>
+        </div>
+
+        <div class="preview-grid">
+          <article class="service preview-card reveal">
+            <h3>Dashboard</h3>
+            <p>Overview panels for placements, student activity, readiness trends, and performance analytics.</p>
+            <div class="preview-shell" aria-hidden="true">
+              <div class="preview-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="dashboard-grid">
+                <div class="dashboard-stat">
+                  <strong>124</strong>
+                  <small>Applications</small>
+                </div>
+                <div class="dashboard-stat">
+                  <strong>38</strong>
+                  <small>Active jobs</small>
+                </div>
+                <div class="dashboard-stat">
+                  <strong>82%</strong>
+                  <small>Readiness</small>
+                </div>
+                <div class="dashboard-panel">
+                  <strong>Placement performance</strong>
+                  <div class="mini-chart">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service preview-card reveal">
+            <h3>Mobile App</h3>
+            <p>Student-friendly access to jobs, notifications, mock interviews, tests, and readiness insights.</p>
+            <div class="preview-shell" aria-hidden="true">
+              <div class="preview-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="phone-shell">
+                <div class="phone-screen">
+                  <div class="phone-header"></div>
+                  <div class="phone-card">
+                    <strong>Interview Ready</strong>
+                    <small>Score updated after mock test</small>
+                  </div>
+                  <div class="phone-card">
+                    <strong>New Job Alert</strong>
+                    <small>Application opens today</small>
+                  </div>
+                  <div class="phone-bottom"></div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service preview-card reveal">
+            <h3>Job Panel</h3>
+            <p>Centralized job publishing, eligibility review, application tracking, and workflow management.</p>
+            <div class="preview-shell" aria-hidden="true">
+              <div class="preview-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="job-layout">
+                <div class="job-sidebar">
+                  <span>Open Jobs</span>
+                  <span>Applicants</span>
+                  <span>Eligible</span>
+                  <span>Rounds</span>
+                </div>
+                <div class="job-main">
+                  <strong>Job Management Panel</strong>
+                  <small>Track progress and activity by role</small>
+                  <ul class="job-list">
+                    <li>Software Engineer<small>82 eligible students</small></li>
+                    <li>Data Analyst<small>46 pending reviews</small></li>
+                    <li>QA Associate<small>31 shortlisted applicants</small></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </div>
@@ -1319,37 +1908,39 @@
     <section class="contact-wrap" id="contact">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow">Contact</span>
-          <h2 style="margin-top: 14px;">Tell us about your website, app, or software idea.</h2>
-          <p>Share your requirement with us and we will help shape the right digital solution for your organization.</p>
+          <span class="eyebrow">Get In Touch</span>
+          <h2 style="margin-top: 14px;">Looking for a reliable technology partner or want to see a demo of our product?</h2>
+          <p>We'd love to hear from you.</p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card reveal">
+            <h3>Request a Demo</h3>
+            <p style="margin-top: 12px;">Tell us about your institution, business, or software requirement and we'll get back to you.</p>
             <form id="contactForm">
               <div class="fields">
                 <div class="field">
-                  <label for="name">Your Name</label>
-                  <input id="name" type="text" placeholder="Enter your name" required />
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="Your name" required />
                 </div>
                 <div class="field">
                   <label for="organization">Organization</label>
-                  <input id="organization" type="text" placeholder="Company, brand, or business name" />
+                  <input id="organization" type="text" placeholder="College, institute, startup, or company" />
                 </div>
                 <div class="field">
                   <label for="email">Email</label>
-                  <input id="email" type="email" placeholder="hello@example.com" required />
+                  <input id="email" type="email" placeholder="info@example.com" required />
                 </div>
                 <div class="field">
-                  <label for="message">Project Details</label>
-                  <textarea id="message" placeholder="Tell us what you want to build and how Chromolog can help." required></textarea>
+                  <label for="message">Message</label>
+                  <textarea id="message" placeholder="Tell us whether you need a demo, a platform, or a custom software solution." required></textarea>
                 </div>
               </div>
 
               <div class="contact-actions">
                 <button class="btn primary" type="submit">
                   <i class="ri-send-plane-fill" aria-hidden="true"></i>
-                  Send Inquiry
+                  Request Demo
                 </button>
                 <span class="contact-note" id="formStatus"></span>
               </div>
@@ -1357,29 +1948,31 @@
           </div>
 
           <aside class="contact-side reveal">
-            <h3>Build something polished, effective, and enduring.</h3>
-            <p style="margin-top: 12px;">Chromolog works best when strategy, design, and development come together with clarity and professional discipline.</p>
+            <h3>Get In Touch</h3>
+            <p style="margin-top: 12px;">Looking for a reliable technology partner or want to see a demo of our product?</p>
+            <p>We'd love to hear from you.</p>
+            <div class="trust-line">Secure &bull; Scalable &bull; Reliable</div>
 
             <div class="contact-list">
-              <div class="contact-item">
-                <i class="ri-phone-line" aria-hidden="true"></i>
-                <div>
-                  <strong>Phone</strong>
-                  <div><a href="tel:+919037563528">+91 90375 63528</a></div>
-                </div>
-              </div>
               <div class="contact-item">
                 <i class="ri-mail-open-line" aria-hidden="true"></i>
                 <div>
                   <strong>Email</strong>
-                  <div><a href="mailto:hello@chromolog.com">hello@chromolog.com</a></div>
+                  <div><a href="mailto:info@chromolog.com">info@chromolog.com</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <i class="ri-phone-line" aria-hidden="true"></i>
+                <div>
+                  <strong>Phone</strong>
+                  <div>+91 XXXXX XXXXX</div>
                 </div>
               </div>
               <div class="contact-item">
                 <i class="ri-map-pin-line" aria-hidden="true"></i>
                 <div>
                   <strong>Location</strong>
-                  <div>Ernakulam, Kerala, India</div>
+                  <div>India</div>
                 </div>
               </div>
             </div>
@@ -1396,36 +1989,38 @@
           <a class="brand-link" href="#home" aria-label="Chromolog home">
             <img class="footer-logo" src="images/logo1.jpeg" alt="Chromolog Smart Digital Solutions logo" />
           </a>
-          <p class="footer-note">&copy; <span id="year"></span> Building smart digital systems for modern organizations.</p>
+          <p class="footer-note">Chromolog Pvt Ltd</p>
+          <p class="footer-note">Building Smart Digital Systems for Modern Organizations</p>
+          <p class="footer-note">&copy; <span id="year"></span> Chromolog Pvt Ltd. All rights reserved.</p>
         </div>
 
         <div class="footer-nav">
-          <a href="#about" aria-label="Go to About section">
-            <i class="ri-information-2-line" aria-hidden="true"></i>
-            <span>
-              <strong>About</strong>
-              <small>Who we are</small>
-            </span>
-          </a>
           <a href="#services" aria-label="Go to Services section">
             <i class="ri-layout-grid-line" aria-hidden="true"></i>
             <span>
               <strong>Services</strong>
-              <small>What we build</small>
+              <small>CRM Development &bull; LMS Development &bull; HRM Systems &bull; Web &amp; Mobile Apps &bull; Custom Software</small>
             </span>
           </a>
-          <a href="#approach" aria-label="Go to Approach section">
-            <i class="ri-compass-3-line" aria-hidden="true"></i>
+          <a href="#product" aria-label="Go to Product section">
+            <i class="ri-rocket-2-line" aria-hidden="true"></i>
             <span>
-              <strong>Approach</strong>
-              <small>How we work</small>
+              <strong>Product</strong>
+              <small>Alphagrew</small>
             </span>
           </a>
           <a href="#contact" aria-label="Go to Contact section">
-            <i class="ri-chat-1-line" aria-hidden="true"></i>
+            <i class="ri-mail-line" aria-hidden="true"></i>
             <span>
               <strong>Contact</strong>
-              <small>Start a project</small>
+              <small>info@chromolog.com</small>
+            </span>
+          </a>
+          <a href="#contact" aria-label="Request demo">
+            <i class="ri-calendar-check-line" aria-hidden="true"></i>
+            <span>
+              <strong>Demo</strong>
+              <small>Request Demo</small>
             </span>
           </a>
         </div>
@@ -1491,7 +2086,7 @@
         form.addEventListener("submit", function (event) {
           event.preventDefault();
           var name = document.getElementById("name").value.trim();
-          status.textContent = "Thanks" + (name ? ", " + name : "") + ". Your message was captured locally for this demo page.";
+          status.textContent = "Thanks" + (name ? ", " + name : "") + ". Your demo request was captured on this preview page.";
           form.reset();
         });
       }
