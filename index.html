@@ -16,6 +16,8 @@
       --green: #8bdc57;
       --navy: #0b1a2e;
       --muted: #4d617a;
+      --violet: #68d957;
+      --violet-deep: #4fb54c;
       --line: rgba(11, 26, 46, 0.12);
       --bg: #eef4fb;
       --bg-deep: #08111f;
@@ -201,8 +203,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
-      padding: 16px 0;
+      gap: 14px;
+      padding: 14px 0;
     }
 
     .brand-link {
@@ -213,7 +215,7 @@
     }
 
     .brand-logo {
-      width: clamp(180px, 19vw, 250px);
+      width: clamp(156px, 15vw, 210px);
       height: auto;
       object-fit: contain;
     }
@@ -231,13 +233,19 @@
     }
 
     .menu {
-      margin-left: auto;
+      margin-left: 0;
+      flex: 1 1 auto;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: nowrap;
+      min-width: 0;
     }
 
     .actions {
-      margin-left: auto;
+      margin-left: 0;
       flex: 0 0 auto;
       justify-content: flex-end;
+      flex-wrap: nowrap;
     }
 
     .menu a,
@@ -247,6 +255,12 @@
       color: var(--muted);
       font-size: 15px;
       transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .menu a {
+      padding: 10px 10px;
+      font-size: 14px;
+      white-space: nowrap;
     }
 
     .menu a:hover,
@@ -276,8 +290,8 @@
     .btn.primary {
       border: none;
       color: #ffffff;
-      background: linear-gradient(135deg, var(--blue-deep), #23b5f5 55%, #23c685 100%);
-      box-shadow: 0 18px 30px rgba(12, 116, 235, 0.2);
+      background: linear-gradient(135deg, var(--blue-deep), #2aa7f5 50%, var(--violet) 100%);
+      box-shadow: 0 18px 30px rgba(13, 109, 223, 0.22);
     }
 
     .btn:hover {
@@ -318,7 +332,7 @@
     }
 
     section {
-      padding: 46px 0;
+      padding: 40px 0;
     }
 
     .eyebrow {
@@ -359,8 +373,9 @@
     }
 
     .hero-grid {
-      grid-template-columns: 1.05fr 0.95fr;
-      align-items: start;
+      grid-template-columns: minmax(0, 0.98fr) minmax(340px, 1.02fr);
+      align-items: stretch;
+      gap: 20px;
     }
 
     .hero-copy,
@@ -400,12 +415,20 @@
 
     h1 {
       margin-top: 20px;
-      max-width: 10ch;
-      font-size: clamp(46px, 6vw, 80px);
+      max-width: 8.6ch;
+      font-size: clamp(48px, 5.6vw, 78px);
     }
 
     h2 {
       font-size: clamp(32px, 4vw, 52px);
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--blue-deep), var(--green));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
 
     p {
@@ -414,9 +437,43 @@
     }
 
     .hero-copy > p {
-      max-width: 620px;
+      max-width: 58ch;
       margin-top: 12px;
       font-size: 17px;
+    }
+
+    .hero-bullets {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .hero-bullets span {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(13, 109, 223, 0.1);
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .hero-bullets i {
+      margin-top: 2px;
+      color: var(--blue-deep);
+      font-size: 18px;
+    }
+
+    .hero-proof {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
     .hero-actions {
@@ -424,6 +481,9 @@
     }
 
     .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
       margin-top: 18px;
     }
 
@@ -483,6 +543,7 @@
     .tile,
     .preview-card {
       transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
+      height: 100%;
     }
 
     .service:hover,
@@ -588,6 +649,203 @@
       color: #2b7ec3;
     }
 
+    .metric-stat strong {
+      font-size: 34px;
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .metric-stat span {
+      font-size: 14px;
+    }
+
+    .dashboard-hero {
+      margin-top: 18px;
+      padding: 18px;
+      border-radius: 28px;
+      background: linear-gradient(160deg, #0d1b30, #122844 62%, #0d1e36);
+      box-shadow: var(--shadow-deep);
+      color: #ffffff;
+    }
+
+    .dashboard-hero strong,
+    .dashboard-hero h3 {
+      color: #ffffff;
+    }
+
+    .dashboard-hero span,
+    .dashboard-hero p,
+    .dashboard-hero small {
+      color: rgba(231, 238, 247, 0.8);
+    }
+
+    .dashboard-hero-head,
+    .impact-board-head,
+    .hero-trend-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .dashboard-hero-head strong {
+      display: block;
+      font-size: 22px;
+      letter-spacing: -0.04em;
+    }
+
+    .dashboard-hero-head span {
+      display: block;
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    .dashboard-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .impact-board .dashboard-badge {
+      background: rgba(79, 181, 76, 0.1);
+      border-color: rgba(79, 181, 76, 0.14);
+      color: var(--violet-deep);
+    }
+
+    .hero-metric-grid,
+    .impact-mini-grid,
+    .workflow-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .hero-metric-grid {
+      margin-top: 16px;
+    }
+
+    .hero-metric-card,
+    .impact-mini-card,
+    .workflow-stat {
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-metric-card strong,
+    .impact-mini-card strong {
+      display: block;
+      font-size: 30px;
+      line-height: 1;
+      letter-spacing: -0.06em;
+    }
+
+    .hero-metric-card span,
+    .impact-mini-card span {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+
+    .hero-trend-panel,
+    .impact-stage-panel {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-trend-head strong,
+    .impact-stage-panel strong {
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-trend-head small {
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(231, 238, 247, 0.74);
+    }
+
+    .trend-bars {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .trend-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .trend-bar span {
+      position: relative;
+      width: 100%;
+      height: 82px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      overflow: hidden;
+    }
+
+    .trend-bar span::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: var(--h);
+      border-radius: 14px;
+      background: linear-gradient(180deg, #57c2ff, #84e166);
+    }
+
+    .trend-bar small {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(231, 238, 247, 0.62);
+    }
+
+    .pipeline-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .pipeline-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .pipeline-item span,
+    .pipeline-item strong {
+      color: #ffffff;
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
     .contact-side h3 {
       font-size: clamp(28px, 4vw, 34px);
     }
@@ -601,6 +859,18 @@
       margin-top: 8px;
     }
 
+    .centered-head {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .centered-head p {
+      max-width: 64ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .steps {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
@@ -610,7 +880,8 @@
     }
 
     .services {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: stretch;
     }
 
     .service i,
@@ -708,13 +979,192 @@
       margin-bottom: 4px;
     }
 
+    .mission-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .mission-copy,
+    .mission-card,
+    .preview-stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .mission-copy,
+    .mission-card {
+      padding: 24px;
+    }
+
+    .mission-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .mission-points div {
+      padding: 14px 16px;
+      border-radius: 20px;
+      background: rgba(247, 249, 255, 0.96);
+      border: 1px solid rgba(76, 179, 255, 0.1);
+      color: var(--navy);
+      font-weight: 700;
+    }
+
+    .mission-card {
+      background: linear-gradient(180deg, rgba(247, 248, 255, 0.98), rgba(241, 244, 255, 0.96));
+    }
+
+    .mission-stat-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 10px;
+    }
+
+    .mission-stat strong {
+      display: block;
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -0.06em;
+      color: var(--blue-deep);
+    }
+
+    .mission-stat span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .preview-stage {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 20px;
+      align-items: center;
+      padding: 28px;
+      background: linear-gradient(180deg, rgba(240, 244, 255, 0.94), rgba(248, 249, 255, 0.98));
+    }
+
+    .preview-copy p {
+      max-width: 48ch;
+      margin-top: 12px;
+    }
+
+    .preview-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .device-showcase {
+      position: relative;
+      min-height: 360px;
+      display: grid;
+      place-items: center;
+    }
+
+    .device-showcase .phone-shell {
+      width: min(220px, 100%);
+      z-index: 2;
+    }
+
+    .preview-float {
+      position: absolute;
+      padding: 14px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid rgba(11, 26, 46, 0.08);
+      box-shadow: 0 18px 36px rgba(11, 26, 46, 0.12);
+    }
+
+    .preview-float.top {
+      top: 26px;
+      right: 8px;
+      width: 214px;
+    }
+
+    .preview-float.bottom {
+      left: 12px;
+      bottom: 18px;
+      width: 224px;
+    }
+
+    .preview-float strong {
+      display: block;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .preview-float small {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .preview-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .preview-mini-grid span {
+      display: block;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(76, 179, 255, 0.08);
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .preview-bars {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+      height: 72px;
+      margin-top: 12px;
+    }
+
+    .preview-bars span {
+      flex: 1 1 0;
+      border-radius: 999px 999px 8px 8px;
+      background: linear-gradient(180deg, var(--blue-deep), var(--green));
+    }
+
+    .preview-bars span:nth-child(1) {
+      height: 44%;
+    }
+
+    .preview-bars span:nth-child(2) {
+      height: 64%;
+    }
+
+    .preview-bars span:nth-child(3) {
+      height: 82%;
+    }
+
+    .preview-bars span:nth-child(4) {
+      height: 58%;
+    }
+
     footer {
+      margin-top: 24px;
       padding: 20px 0 34px;
+      background: linear-gradient(135deg, #0b1a2e, #103859, #184b44);
+      color: #ffffff;
     }
 
     .footer {
-      padding-top: 14px;
-      border-top: 1px solid rgba(18, 37, 64, 0.08);
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .footer-brand {
@@ -735,22 +1185,20 @@
       gap: 12px;
       padding: 14px;
       border-radius: 22px;
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(239, 247, 255, 0.92));
-      border: 1px solid rgba(44, 168, 255, 0.12);
-      box-shadow: 0 14px 24px rgba(18, 37, 64, 0.06);
-      color: var(--navy);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: none;
+      color: #ffffff;
       min-width: 0;
       transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
 
     .footer-nav a:hover {
       transform: translateY(-2px);
-      border-color: rgba(44, 168, 255, 0.24);
-      background:
-        linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(232, 248, 255, 0.96));
-      color: var(--navy);
-      box-shadow: 0 18px 28px rgba(18, 37, 64, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      box-shadow: none;
     }
 
     .footer-nav i {
@@ -761,11 +1209,11 @@
       height: 42px;
       flex: 0 0 auto;
       border-radius: 16px;
-      background: linear-gradient(145deg, rgba(44, 168, 255, 0.16), rgba(122, 229, 74, 0.18));
-      border: 1px solid rgba(44, 168, 255, 0.12);
-      color: var(--blue-deep);
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #ffffff;
       font-size: 20px;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+      box-shadow: none;
     }
 
     .footer-nav strong,
@@ -775,7 +1223,7 @@
     }
 
     .footer-nav strong {
-      color: var(--navy);
+      color: #ffffff;
       font-size: 15px;
       letter-spacing: -0.02em;
     }
@@ -783,7 +1231,7 @@
     .footer-nav small {
       margin-top: 3px;
       font-size: 12px;
-      color: var(--muted);
+      color: rgba(255, 255, 255, 0.72);
     }
 
     .footer-logo {
@@ -795,7 +1243,7 @@
     .footer-note {
       margin-top: 10px;
       font-size: 14px;
-      color: var(--muted);
+      color: rgba(255, 255, 255, 0.74);
     }
 
     .trust-line {
@@ -826,7 +1274,7 @@
       justify-content: space-between;
       gap: 18px;
       color: #ffffff;
-      background: linear-gradient(135deg, rgba(8, 17, 31, 0.98), rgba(13, 109, 223, 0.94), rgba(35, 198, 133, 0.88));
+      background: linear-gradient(135deg, #0c1a2f, #0d6ddf, #4fb54c);
       box-shadow: var(--shadow-deep);
     }
 
@@ -874,7 +1322,7 @@
     }
 
     .feature-grid {
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .client-grid {
@@ -899,12 +1347,12 @@
       padding: 28px;
       border-radius: 36px;
       background:
-        radial-gradient(circle at top right, rgba(76, 179, 255, 0.22), transparent 28%),
-        radial-gradient(circle at bottom left, rgba(139, 220, 87, 0.22), transparent 32%),
-        linear-gradient(145deg, #091427 0%, #10203a 48%, #0b1a30 100%);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: var(--shadow-deep);
-      color: #ffffff;
+        radial-gradient(circle at top right, rgba(76, 179, 255, 0.12), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(76, 179, 255, 0.1), transparent 32%),
+        linear-gradient(180deg, rgba(248, 251, 255, 0.98), rgba(238, 246, 255, 0.96));
+      border: 1px solid rgba(76, 179, 255, 0.08);
+      box-shadow: 0 24px 54px rgba(11, 26, 46, 0.08);
+      color: var(--navy);
     }
 
     .visual-shell::before {
@@ -912,8 +1360,8 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent 34%),
-        linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.04));
+        linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent 32%),
+        linear-gradient(180deg, transparent, rgba(76, 179, 255, 0.03));
       pointer-events: none;
     }
 
@@ -923,22 +1371,22 @@
     }
 
     .visual-shell .eyebrow {
-      border-color: rgba(255, 255, 255, 0.12);
-      background: rgba(255, 255, 255, 0.08);
-      color: #ffffff;
+      border-color: rgba(76, 179, 255, 0.14);
+      background: rgba(76, 179, 255, 0.08);
+      color: var(--blue-deep);
     }
 
     .visual-shell p,
     .visual-shell li,
     .visual-shell small,
     .visual-shell span {
-      color: rgba(229, 237, 247, 0.8);
+      color: var(--muted);
     }
 
     .visual-shell h2,
     .visual-shell h3,
     .visual-shell strong {
-      color: #ffffff;
+      color: var(--navy);
     }
 
     .story-layout,
@@ -991,8 +1439,9 @@
       gap: 8px;
       padding: 10px 12px;
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(76, 179, 255, 0.08);
+      border: 1px solid rgba(76, 179, 255, 0.12);
+      color: var(--navy);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.04em;
@@ -1005,6 +1454,118 @@
       height: 8px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--blue), var(--green));
+    }
+
+    .impact-board {
+      padding: 22px;
+      border-radius: 30px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(11, 26, 46, 0.08);
+      box-shadow: var(--shadow);
+    }
+
+    .impact-board p {
+      margin-top: 8px;
+    }
+
+    .impact-mini-grid {
+      margin-top: 16px;
+    }
+
+    .impact-mini-card,
+    .workflow-stat,
+    .impact-stage-panel {
+      background: rgba(247, 249, 255, 0.96);
+      border: 1px solid rgba(11, 26, 46, 0.08);
+    }
+
+    .impact-mini-card strong {
+      color: var(--navy);
+    }
+
+    .impact-stage-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .impact-stage-item > div:first-child {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .impact-stage-item strong {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    .impact-fill {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(11, 26, 46, 0.08);
+      overflow: hidden;
+    }
+
+    .impact-fill span {
+      display: block;
+      width: var(--w);
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(135deg, var(--blue-deep), var(--green));
+    }
+
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .workflow-step {
+      padding: 18px;
+      border-radius: 22px;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(11, 26, 46, 0.08);
+    }
+
+    .workflow-step .step-no {
+      color: var(--blue-deep);
+      background: linear-gradient(135deg, rgba(76, 179, 255, 0.12), rgba(139, 220, 87, 0.16));
+      border-color: rgba(76, 179, 255, 0.14);
+    }
+
+    .workflow-step h3 {
+      margin-top: 14px;
+      font-size: 20px;
+      color: var(--navy);
+    }
+
+    .workflow-step p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .workflow-stats {
+      margin-top: 16px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .workflow-stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 18px;
+      letter-spacing: -0.03em;
+    }
+
+    .workflow-stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .story-gallery {
@@ -1097,16 +1658,21 @@
       margin-top: 22px;
       padding: 24px;
       border-radius: 30px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(14px);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(11, 26, 46, 0.08);
+      box-shadow: var(--shadow);
     }
 
     .carousel-head {
       display: flex;
       align-items: flex-end;
-      justify-content: space-between;
+      justify-content: center;
       gap: 16px;
+    }
+
+    .carousel-head > div {
+      max-width: 720px;
+      text-align: center;
     }
 
     .carousel-head p {
@@ -1453,6 +2019,20 @@
       }
     }
 
+    @media (max-width: 1100px) {
+      .nav .menu {
+        display: none;
+      }
+
+      .actions .btn:first-child {
+        display: none;
+      }
+
+      .hamburger {
+        display: inline-flex;
+      }
+    }
+
     @media (max-width: 940px) {
       .hero-grid,
       .services,
@@ -1462,11 +2042,19 @@
         grid-template-columns: 1fr;
       }
 
+      .hero-grid {
+        gap: 16px;
+      }
+
       .feature-grid,
       .client-grid,
       .why-grid,
       .preview-grid {
         grid-template-columns: 1fr;
+      }
+
+      h1 {
+        max-width: 100%;
       }
 
       .nav .menu {
@@ -1483,7 +2071,13 @@
 
       .hero-stats {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .services,
+      .client-grid,
+      .why-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
       .footer {
@@ -1742,6 +2336,13 @@
         font-size: 15px;
       }
 
+      .services,
+      .client-grid,
+      .why-grid,
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+
       .service h3,
       .step h3,
       .stat strong {
@@ -1790,6 +2391,7 @@
       }
 
       h1 {
+        max-width: 100%;
         font-size: clamp(30px, 10.4vw, 40px);
       }
 
@@ -1825,16 +2427,30 @@
         grid-template-columns: 1fr;
       }
 
+      .mission-grid,
+      .preview-stage {
+        grid-template-columns: 1fr;
+      }
+
       .story-metrics {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .image-card.large {
-        grid-row: span 1;
-        min-height: 320px;
+      .hero-metric-grid,
+      .impact-mini-grid,
+      .workflow-grid,
+      .workflow-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .carousel-head {
+      .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .carousel-head,
+      .dashboard-hero-head,
+      .impact-board-head,
+      .hero-trend-head {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -1847,13 +2463,46 @@
         border-radius: 28px;
       }
 
+      .mission-copy,
+      .mission-card,
+      .preview-stage {
+        padding: 20px;
+        border-radius: 28px;
+      }
+
       .story-gallery {
         grid-template-columns: 1fr;
       }
 
-      .image-card,
-      .image-card.large {
-        min-height: 260px;
+      .hero-metric-grid,
+      .impact-mini-grid,
+      .workflow-grid,
+      .workflow-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .dashboard-hero,
+      .impact-board {
+        padding: 18px;
+        border-radius: 24px;
+      }
+
+      .device-showcase {
+        min-height: 320px;
+      }
+
+      .preview-float.top {
+        right: 0;
+        width: 190px;
+      }
+
+      .preview-float.bottom {
+        left: 0;
+        width: 200px;
       }
 
       .slide-media {
@@ -1886,6 +2535,13 @@
         border-radius: 24px;
       }
 
+      .mission-copy,
+      .mission-card,
+      .preview-stage {
+        padding: 18px;
+        border-radius: 24px;
+      }
+
       .story-metrics {
         grid-template-columns: 1fr;
       }
@@ -1894,22 +2550,45 @@
         gap: 12px;
       }
 
-      .image-card,
-      .image-card.large {
-        min-height: 220px;
+      .hero-bullets span {
+        padding: 10px 12px;
+      }
+
+      .dashboard-hero {
+        padding: 16px;
         border-radius: 22px;
       }
 
-      .image-card.brand-card img {
-        padding: 26px;
+      .preview-actions {
+        flex-direction: column;
+        align-items: stretch;
       }
 
-      .image-card-content {
-        padding: 14px;
+      .preview-actions .btn {
+        width: 100%;
       }
 
-      .image-card h3 {
-        font-size: 20px;
+      .hero-metric-card strong,
+      .impact-mini-card strong {
+        font-size: 24px;
+      }
+
+      .device-showcase {
+        min-height: auto;
+        gap: 12px;
+      }
+
+      .preview-float {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+      }
+
+      .trend-bar span {
+        height: 68px;
       }
 
       .carousel-btn {
@@ -1972,7 +2651,7 @@
 
         <nav class="menu" aria-label="Site sections">
           <a href="#about">About</a>
-          <a href="#showcase">Showcase</a>
+          <a href="#impact">Impact</a>
           <a href="#product">Product</a>
           <a href="#services">Services</a>
           <a href="#clients">Who We Serve</a>
@@ -1991,7 +2670,7 @@
       <div class="drawer" id="drawer">
         <nav>
           <a href="#about">About</a>
-          <a href="#showcase">Showcase</a>
+          <a href="#impact">Impact</a>
           <a href="#product">Product</a>
           <a href="#services">Services</a>
           <a href="#clients">Who We Serve</a>
@@ -2006,40 +2685,43 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy reveal">
-            <!-- <div class="hero-brand">
-              <img src="images/logo1.jpeg" alt="Chromolog logo" />
-            </div> -->
-            <span class="eyebrow" style="margin-top: 18px;">AI-Powered Product &amp; Service Company</span>
-            <h1>Smart Digital Solutions for Modern Institutions &amp; Businesses</h1>
-            <p>We design and build AI-powered platforms, web and mobile applications, and custom software solutions tailored for colleges, training institutes, and enterprises.</p>
+            <span class="eyebrow" style="margin-top: 18px;">Built for modern campuses &amp; growth teams</span>
+            <h1>AI-powered placement, training &amp; operations automation that <span class="gradient-text">turns workflows into outcomes</span></h1>
+            <p>Chromolog builds products and digital systems that help colleges, training institutes, and organizations manage workflows, communication, and performance from one clear control layer.</p>
 
-            <div class="trust-line">Secure &bull; Scalable &bull; Reliable</div>
+            <div class="hero-bullets">
+              <span><i class="ri-check-line" aria-hidden="true"></i>AI-powered eligibility, readiness scoring, and smart routing.</span>
+              <span><i class="ri-check-line" aria-hidden="true"></i>Automated job, training, interview, and notification workflows.</span>
+              <span><i class="ri-check-line" aria-hidden="true"></i>Unified dashboards for product delivery, campus operations, and service systems.</span>
+            </div>
+
+            <div class="hero-proof">Placement workflows &bull; Institutional software &bull; Web and mobile delivery</div>
 
             <div class="hero-actions">
               <a class="btn primary" href="#contact"><i class="ri-rocket-line" aria-hidden="true"></i>Request Demo</a>
-              <a class="btn" href="#product"><i class="ri-layout-grid-fill" aria-hidden="true"></i>View Our Product</a>
+              <a class="btn" href="#product"><i class="ri-layout-grid-fill" aria-hidden="true"></i>Explore Alphagrew</a>
             </div>
 
             <div class="hero-stats">
-              <div class="stat">
-                <strong>AI-Powered Platforms</strong>
-                <span>Intelligent software that improves workflows, automation, and performance visibility.</span>
+              <div class="stat metric-stat">
+                <strong>10x</strong>
+                <span>Faster coordination across placements, training, and readiness workflows.</span>
               </div>
-              <div class="stat">
-                <strong>Web &amp; Mobile Apps</strong>
-                <span>Secure applications tailored for educational institutions, startups, and enterprise teams.</span>
+              <div class="stat metric-stat">
+                <strong>360&deg;</strong>
+                <span>Visibility into jobs, interviews, notifications, and performance analytics.</span>
               </div>
-              <div class="stat">
-                <strong>Product + Service Approach</strong>
-                <span>We create scalable products while also building custom software around your exact needs.</span>
+              <div class="stat metric-stat">
+                <strong>24/7</strong>
+                <span>Automation support through AI nudges, alerts, and operational tracking.</span>
               </div>
             </div>
           </div>
 
           <aside class="hero-shell reveal">
             <div class="hero-top">
-              <span class="eyebrow">Chromolog Ecosystem</span>
-              <span class="pill">Secure &bull; Scalable &bull; Reliable</span>
+              <span class="eyebrow">Alphagrew Operations Cloud</span>
+              <span class="pill">Live Dashboards</span>
             </div>
 
             <div class="showcase">
@@ -2047,30 +2729,68 @@
                 <img src="images/logo2.png" alt="Chromolog logo mark" />
               </div>
               <div>
-                <strong>Our Flagship Product</strong>
-                <p>Alphagrew is built for campus placements, training workflows, interview readiness, and performance analytics.</p>
+                <strong>Unified Product Layer</strong>
+                <p>Alphagrew brings placements, training, communication, and performance visibility into one practical platform.</p>
               </div>
             </div>
 
-            <h2>Alphagrew + Custom Digital Platforms</h2>
-            <p style="margin-top: 12px;">From placement automation and mock interviews to CRM, LMS, HRM, and custom business systems, we help organizations move faster with software that fits how they work.</p>
+            <div class="dashboard-hero" aria-label="Alphagrew dashboard preview">
+              <div class="dashboard-hero-head">
+                <div>
+                  <strong>Placement Dashboard</strong>
+                  <span>Track readiness, active drives, and interview movement at a glance.</span>
+                </div>
+                <span class="dashboard-badge">Live Overview</span>
+              </div>
 
-            <div class="panel-tiles" style="margin-top: 20px;">
-              <div class="tile">
-                <strong>Placement Automation</strong>
-                <span>Manage job postings, filtering, applications, and interview readiness in one workflow.</span>
+              <div class="hero-metric-grid">
+                <div class="hero-metric-card">
+                  <strong>214</strong>
+                  <span>Eligible students</span>
+                </div>
+                <div class="hero-metric-card">
+                  <strong>18</strong>
+                  <span>Active drives</span>
+                </div>
+                <div class="hero-metric-card">
+                  <strong>84%</strong>
+                  <span>Readiness score</span>
+                </div>
+                <div class="hero-metric-card">
+                  <strong>27</strong>
+                  <span>Interviews this week</span>
+                </div>
               </div>
-              <div class="tile">
-                <strong>AI Readiness Tools</strong>
-                <span>Resume analysis, mock interviews, tests, and scoring built into the product journey.</span>
+
+              <div class="hero-trend-panel">
+                <div class="hero-trend-head">
+                  <strong>7-day readiness trend</strong>
+                  <small>Updated in real time</small>
+                </div>
+                <div class="trend-bars" aria-hidden="true">
+                  <div class="trend-bar"><span style="--h: 36px;"></span><small>Mon</small></div>
+                  <div class="trend-bar"><span style="--h: 42px;"></span><small>Tue</small></div>
+                  <div class="trend-bar"><span style="--h: 48px;"></span><small>Wed</small></div>
+                  <div class="trend-bar"><span style="--h: 44px;"></span><small>Thu</small></div>
+                  <div class="trend-bar"><span style="--h: 56px;"></span><small>Fri</small></div>
+                  <div class="trend-bar"><span style="--h: 62px;"></span><small>Sat</small></div>
+                  <div class="trend-bar"><span style="--h: 68px;"></span><small>Sun</small></div>
+                </div>
               </div>
-              <div class="tile">
-                <strong>Institution Systems</strong>
-                <span>CRM, LMS, HRM, and operational software designed for structured organizations.</span>
-              </div>
-              <div class="tile">
-                <strong>Web &amp; Mobile Delivery</strong>
-                <span>Responsive applications and cross-platform experiences for users on every device.</span>
+
+              <div class="pipeline-list">
+                <div class="pipeline-item">
+                  <span>Auto eligibility checks</span>
+                  <strong>Running</strong>
+                </div>
+                <div class="pipeline-item">
+                  <span>Interview reminders</span>
+                  <strong>Scheduled</strong>
+                </div>
+                <div class="pipeline-item">
+                  <span>Readiness insights</span>
+                  <strong>Live</strong>
+                </div>
               </div>
             </div>
           </aside>
@@ -2080,167 +2800,177 @@
 
     <section id="about">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Who We Are</span>
-          <h2 style="margin-top: 14px;">Product-driven technology built to solve real operational challenges.</h2>
-          <p>Chromolog is a product-driven IT solutions company focused on building intelligent, scalable, and user-friendly digital systems.</p>
-          <p>We specialize in developing AI-powered platforms, enterprise software, and mobile applications that solve real-world challenges for educational institutions and businesses.</p>
-        </div>
+        <div class="mission-grid">
+          <div class="mission-copy reveal">
+            <span class="eyebrow">Our Mission</span>
+            <h2 style="margin-top: 14px;">Build practical AI products that teams can actually run with every day.</h2>
+            <p style="margin-top: 12px;">Chromolog is focused on product-led digital systems that simplify operations, improve visibility, and create cleaner user journeys for institutions and businesses.</p>
 
-        <div class="steps">
-          <article class="step reveal">
-            <span class="step-no">1</span>
-            <h3>Intelligent Systems</h3>
-            <p>We design practical digital products that bring AI-powered features into real workflows.</p>
-          </article>
-          <article class="step reveal">
-            <span class="step-no">2</span>
-            <h3>Scalable Architecture</h3>
-            <p>Our platforms are built to support growth across institutions, teams, and expanding operations.</p>
-          </article>
-          <article class="step reveal">
-            <span class="step-no">3</span>
-            <h3>User-Friendly Experiences</h3>
-            <p>We focus on clean, usable interfaces that help teams adopt systems with confidence.</p>
-          </article>
+            <div class="mission-points">
+              <div>Product thinking first, then services around the workflow.</div>
+              <div>AI used for practical scoring, automation, and decision support.</div>
+              <div>Interfaces designed to stay clear across dashboard, web, and mobile views.</div>
+            </div>
+          </div>
+
+          <div class="mission-card reveal">
+            <span class="eyebrow">What We Optimize</span>
+            <div class="mission-stat-grid">
+              <div class="mission-stat">
+                <strong>1 Platform</strong>
+                <span>Placements, readiness, analytics, and communication in one experience.</span>
+              </div>
+              <div class="mission-stat">
+                <strong>3 Core Layers</strong>
+                <span>Capture, automate, and report across every workflow.</span>
+              </div>
+              <div class="mission-stat">
+                <strong>24/7 Visibility</strong>
+                <span>Live dashboards and alerts for teams that need faster decisions.</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="visual-story" id="showcase">
+    <section class="visual-story" id="impact">
       <div class="container">
         <div class="visual-shell">
           <div class="story-layout">
             <div class="story-copy reveal">
-              <span class="eyebrow">Visual Showcase</span>
-              <h2 style="margin-top: 16px;">Richer cards, stronger contrast, and image-led storytelling for a more premium first impression.</h2>
-              <p style="margin-top: 12px;">This section makes the page feel more visual and more alive by combining high-contrast surfaces, outcome-led cards, and a guided carousel narrative for products and services.</p>
+              <span class="eyebrow">The Alphagrew Impact</span>
+              <h2 style="margin-top: 16px;">From placement automation to measurable campus outcomes.</h2>
+              <p style="margin-top: 12px;">This section now follows a cleaner SaaS product rhythm: focused benefits, live-style metrics, and a simple workflow story that relates directly to what Alphagrew and Chromolog products deliver.</p>
 
               <div class="story-metrics">
                 <div class="story-metric">
-                  <strong>Card-first hierarchy</strong>
-                  <span>Big ideas are broken into clearer, more scannable value cards.</span>
+                  <strong>10x faster shortlisting</strong>
+                  <span>Auto filtering and readiness scoring reduce manual review during drives.</span>
                 </div>
                 <div class="story-metric">
-                  <strong>More visual depth</strong>
-                  <span>Image-backed sections add storytelling instead of relying only on text blocks.</span>
+                  <strong>Unified operational visibility</strong>
+                  <span>Jobs, student progress, communication, and analytics live in one control center.</span>
                 </div>
                 <div class="story-metric">
-                  <strong>Controlled motion</strong>
-                  <span>A simple carousel script keeps the page moving without feeling busy.</span>
+                  <strong>Higher student readiness</strong>
+                  <span>Mock interviews, tests, resume reviews, and performance signals stay connected.</span>
+                </div>
+                <div class="story-metric">
+                  <strong>Built for real institutions</strong>
+                  <span>Custom workflows fit colleges, training teams, and operational service environments.</span>
                 </div>
               </div>
 
               <div class="signal-row">
-                <span>Placement Platforms</span>
-                <span>Enterprise Systems</span>
-                <span>Mobile Products</span>
-                <span>AI Workflows</span>
+                <span>Job Drives</span>
+                <span>Readiness Scores</span>
+                <span>Mock Interviews</span>
+                <span>Performance Analytics</span>
               </div>
             </div>
 
-            <div class="story-gallery reveal">
-              <article class="image-card large">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="A product team collaborating around a table" />
-                <div class="image-card-content">
-                  <span class="image-card-tag">Delivery Teams</span>
-                  <h3>Software projects that feel practical, polished, and ready to scale.</h3>
-                  <p>We connect product thinking, interface clarity, and operational workflows into one delivery rhythm.</p>
+            <div class="impact-board reveal">
+              <div class="impact-board-head">
+                <div>
+                  <strong>Operational Snapshot</strong>
+                  <p>One glance tells your team what is moving, what needs attention, and where support should go next.</p>
                 </div>
-              </article>
+                <span class="dashboard-badge">Today</span>
+              </div>
 
-              <article class="image-card brand-card">
-                <img src="images/1000326179.png" alt="Chromolog brand symbol" />
-                <div class="image-card-content">
-                  <span class="image-card-tag">Brand Signal</span>
-                  <h3>Sharper visual identity</h3>
-                  <p>Contrast, depth, and branded surfaces help the page feel more confident.</p>
+              <div class="impact-mini-grid">
+                <div class="impact-mini-card">
+                  <strong>128</strong>
+                  <span>Placement ready</span>
                 </div>
-              </article>
+                <div class="impact-mini-card">
+                  <strong>94</strong>
+                  <span>Training active</span>
+                </div>
+                <div class="impact-mini-card">
+                  <strong>36</strong>
+                  <span>Needs support</span>
+                </div>
+                <div class="impact-mini-card">
+                  <strong>12</strong>
+                  <span>Upcoming drives</span>
+                </div>
+              </div>
 
-              <article class="image-card">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="People reviewing work on a laptop in a modern office" />
-                <div class="image-card-content">
-                  <span class="image-card-tag">Product Views</span>
-                  <h3>More visual storytelling</h3>
-                  <p>Image cards create momentum before users reach the deeper product details below.</p>
+              <div class="impact-stage-panel">
+                <strong>Readiness distribution</strong>
+                <div class="impact-stage-list">
+                  <div class="impact-stage-item">
+                    <div>
+                      <span>Ready</span>
+                      <strong>52%</strong>
+                    </div>
+                    <div class="impact-fill"><span style="--w: 52%;"></span></div>
+                  </div>
+                  <div class="impact-stage-item">
+                    <div>
+                      <span>Improving</span>
+                      <strong>31%</strong>
+                    </div>
+                    <div class="impact-fill"><span style="--w: 31%;"></span></div>
+                  </div>
+                  <div class="impact-stage-item">
+                    <div>
+                      <span>Needs support</span>
+                      <strong>17%</strong>
+                    </div>
+                    <div class="impact-fill"><span style="--w: 17%;"></span></div>
+                  </div>
                 </div>
-              </article>
+              </div>
             </div>
           </div>
 
-          <div class="carousel-shell reveal" data-carousel>
+          <div class="carousel-shell reveal">
             <div class="carousel-head">
               <div>
-                <span class="eyebrow">Guided Carousel</span>
-                <h3 style="margin-top: 14px;">A moving walkthrough of the experiences Chromolog can deliver.</h3>
-                <p>The script rotates through different use cases automatically, while still letting users move backward and forward manually.</p>
-              </div>
-
-              <div class="carousel-controls">
-                <button class="carousel-btn" type="button" data-carousel-prev aria-label="Show previous slide">
-                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
-                </button>
-                <div class="carousel-dots" aria-label="Carousel navigation">
-                  <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Go to slide 1"></button>
-                  <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Go to slide 2"></button>
-                  <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Go to slide 3"></button>
-                </div>
-                <button class="carousel-btn" type="button" data-carousel-next aria-label="Show next slide">
-                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
-                </button>
+                <span class="eyebrow">How It Works</span>
+                <h3 style="margin-top: 14px;">From capture to placement in four clean steps.</h3>
+                <p>Built like a focused SaaS flow: connect data, score readiness, automate engagement, and track progress through one dashboard.</p>
               </div>
             </div>
 
-            <div class="carousel-window">
-              <div class="carousel-track" data-carousel-track>
-                <article class="carousel-slide" data-carousel-slide>
-                  <div class="slide-media">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="Students walking across a campus courtyard" />
-                  </div>
-                  <div class="slide-copy">
-                    <span class="image-card-tag">Campus Operations</span>
-                    <h3 style="margin-top: 14px;">Placement workflows with clearer visibility and less manual effort.</h3>
-                    <p>Bring job publishing, eligibility checks, mock interviews, readiness scoring, and student communication into one connected system.</p>
-                    <ul class="slide-points">
-                      <li>Filter candidates faster with structured eligibility logic.</li>
-                      <li>Track placement readiness across web and mobile touchpoints.</li>
-                      <li>Turn reporting into a live operational dashboard instead of static follow-ups.</li>
-                    </ul>
-                  </div>
-                </article>
+            <div class="workflow-grid">
+              <article class="workflow-step">
+                <span class="step-no">1</span>
+                <h3>Capture</h3>
+                <p>Collect student profiles, job requirements, applications, and training signals in one place.</p>
+              </article>
+              <article class="workflow-step">
+                <span class="step-no">2</span>
+                <h3>Score</h3>
+                <p>Use AI-powered rules to identify eligibility, readiness, and the next best action.</p>
+              </article>
+              <article class="workflow-step">
+                <span class="step-no">3</span>
+                <h3>Automate</h3>
+                <p>Trigger reminders, notifications, practice workflows, and interview coordination automatically.</p>
+              </article>
+              <article class="workflow-step">
+                <span class="step-no">4</span>
+                <h3>Track</h3>
+                <p>Monitor outcomes, conversion trends, and student performance through clean dashboards.</p>
+              </article>
+            </div>
 
-                <article class="carousel-slide" data-carousel-slide>
-                  <div class="slide-media">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="A laptop showing code and digital product work" />
-                  </div>
-                  <div class="slide-copy">
-                    <span class="image-card-tag">Enterprise Systems</span>
-                    <h3 style="margin-top: 14px;">Custom platforms built around the way teams already operate.</h3>
-                    <p>CRM, LMS, HRM, and internal workflow products become easier to trust when the interface is clean, fast, and deeply aligned with the business process.</p>
-                    <ul class="slide-points">
-                      <li>Use cards to surface the most important actions and metrics first.</li>
-                      <li>Reduce interface friction with focused modules and sharper navigation.</li>
-                      <li>Support long-term scale with a visual system that stays consistent across products.</li>
-                    </ul>
-                  </div>
-                </article>
-
-                <article class="carousel-slide" data-carousel-slide>
-                  <div class="slide-media">
-                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&amp;fit=crop&amp;w=1100&amp;q=80" alt="A person holding a smartphone with an app interface visible" />
-                  </div>
-                  <div class="slide-copy">
-                    <span class="image-card-tag">Mobile + AI</span>
-                    <h3 style="margin-top: 14px;">More image-led, high-contrast experiences across devices.</h3>
-                    <p>Combining visual sections with purposeful motion gives product pages a stronger sense of polish, especially when users are exploring on mobile first.</p>
-                    <ul class="slide-points">
-                      <li>Stronger contrast improves readability and visual confidence.</li>
-                      <li>Imagery adds context before users commit to reading dense sections.</li>
-                      <li>Simple motion helps users understand the story without overwhelming them.</li>
-                    </ul>
-                  </div>
-                </article>
+            <div class="workflow-stats">
+              <div class="workflow-stat">
+                <strong>1 control center</strong>
+                <span>Jobs, tests, interviews, communication, analytics, and reporting.</span>
+              </div>
+              <div class="workflow-stat">
+                <strong>Real-time visibility</strong>
+                <span>Teams see who is ready, what is blocked, and what is improving.</span>
+              </div>
+              <div class="workflow-stat">
+                <strong>Custom delivery</strong>
+                <span>The same product thinking can extend into CRM, LMS, HRM, and service systems.</span>
               </div>
             </div>
           </div>
@@ -2266,11 +2996,11 @@
 
     <section id="product">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Our Flagship Product</span>
+        <div class="section-head reveal centered-head">
+          <span class="eyebrow">Powerful Features. <span class="gradient-text">One Platform.</span></span>
           <h2 style="margin-top: 14px;">Alphagrew</h2>
-          <p>Alphagrew is an AI-powered placement and training platform designed for colleges and training institutes to streamline placement processes and enhance student interview readiness.</p>
-          <p>From job postings to mock interviews and performance analytics, Alphagrew provides a complete digital ecosystem for campus placements.</p>
+          <p>Alphagrew is an AI-powered placement and training platform built for colleges and institutes that need cleaner workflows, better visibility, and stronger student outcomes.</p>
+          <p>Everything from job publishing and interview readiness to analytics and communication is connected through one product experience.</p>
         </div>
 
         <div class="showcase reveal">
@@ -2314,11 +3044,6 @@
             <i class="ri-speed-up-line" aria-hidden="true"></i>
             <h3>Interview Readiness Score</h3>
             <p>Measure student preparedness with a focused score that supports training and placement decisions.</p>
-          </article>
-          <article class="service reveal">
-            <i class="ri-notification-3-line" aria-hidden="true"></i>
-            <h3>Push Notifications</h3>
-            <p>Keep students informed about job updates, interviews, deadlines, and training activities.</p>
           </article>
         </div>
       </div>
@@ -2439,102 +3164,56 @@
 
     <section id="preview">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Product Preview</span>
-          <h2 style="margin-top: 14px;">See how Alphagrew can look across core workflows.</h2>
-          <p>Explore how Alphagrew simplifies placement management and enhances student performance through an intuitive and powerful interface.</p>
-        </div>
+        <div class="preview-stage reveal">
+          <div class="preview-copy">
+            <span class="eyebrow">A Dashboard built for <span class="gradient-text">Clarity</span></span>
+            <h2 style="margin-top: 14px;">One product view for placements, readiness, and student performance.</h2>
+            <p>Alphagrew brings dashboard clarity to both administrators and students, so the same system works across desktop review, live alerts, and mobile-first participation.</p>
 
-        <div class="preview-grid">
-          <article class="service preview-card reveal">
-            <h3>Dashboard</h3>
-            <p>Overview panels for placements, student activity, readiness trends, and performance analytics.</p>
-            <div class="preview-shell" aria-hidden="true">
-              <div class="preview-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="dashboard-grid">
-                <div class="dashboard-stat">
-                  <strong>124</strong>
-                  <small>Applications</small>
-                </div>
-                <div class="dashboard-stat">
-                  <strong>38</strong>
-                  <small>Active jobs</small>
-                </div>
-                <div class="dashboard-stat">
-                  <strong>82%</strong>
-                  <small>Readiness</small>
-                </div>
-                <div class="dashboard-panel">
-                  <strong>Placement performance</strong>
-                  <div class="mini-chart">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
+            <div class="preview-actions">
+              <a class="btn primary" href="#contact">Request Demo</a>
+              <a class="btn" href="#product">View Product Flow</a>
+            </div>
+          </div>
+
+          <div class="device-showcase" aria-hidden="true">
+            <div class="preview-float top">
+              <strong>Ready-to-place pipeline</strong>
+              <small>Review students, interview progress, and drive status without switching tools.</small>
+              <div class="preview-mini-grid">
+                <span>124 Active</span>
+                <span>38 Jobs</span>
+                <span>82% Ready</span>
+                <span>12 Alerts</span>
               </div>
             </div>
-          </article>
 
-          <article class="service preview-card reveal">
-            <h3>Mobile App</h3>
-            <p>Student-friendly access to jobs, notifications, mock interviews, tests, and readiness insights.</p>
-            <div class="preview-shell" aria-hidden="true">
-              <div class="preview-top">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="phone-shell">
-                <div class="phone-screen">
-                  <div class="phone-header"></div>
-                  <div class="phone-card">
-                    <strong>Interview Ready</strong>
-                    <small>Score updated after mock test</small>
-                  </div>
-                  <div class="phone-card">
-                    <strong>New Job Alert</strong>
-                    <small>Application opens today</small>
-                  </div>
-                  <div class="phone-bottom"></div>
+            <div class="phone-shell">
+              <div class="phone-screen">
+                <div class="phone-header"></div>
+                <div class="phone-card">
+                  <strong>Interview Ready</strong>
+                  <small>Score updated after mock test</small>
                 </div>
+                <div class="phone-card">
+                  <strong>New Job Alert</strong>
+                  <small>Application opens today</small>
+                </div>
+                <div class="phone-bottom"></div>
               </div>
             </div>
-          </article>
 
-          <article class="service preview-card reveal">
-            <h3>Job Panel</h3>
-            <p>Centralized job publishing, eligibility review, application tracking, and workflow management.</p>
-            <div class="preview-shell" aria-hidden="true">
-              <div class="preview-top">
+            <div class="preview-float bottom">
+              <strong>Performance trend</strong>
+              <small>See readiness movement and identify where mentoring support is needed next.</small>
+              <div class="preview-bars">
                 <span></span>
                 <span></span>
                 <span></span>
-              </div>
-              <div class="job-layout">
-                <div class="job-sidebar">
-                  <span>Open Jobs</span>
-                  <span>Applicants</span>
-                  <span>Eligible</span>
-                  <span>Rounds</span>
-                </div>
-                <div class="job-main">
-                  <strong>Job Management Panel</strong>
-                  <small>Track progress and activity by role</small>
-                  <ul class="job-list">
-                    <li>Software Engineer<small>82 eligible students</small></li>
-                    <li>Data Analyst<small>46 pending reviews</small></li>
-                    <li>QA Associate<small>31 shortlisted applicants</small></li>
-                  </ul>
-                </div>
+                <span></span>
               </div>
             </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -2669,7 +3348,6 @@
       var hamburger = document.getElementById("hamburger");
       var drawer = document.getElementById("drawer");
       var year = document.getElementById("year");
-      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       function hideLoader() {
         if (!loader || loader.classList.contains("is-hidden")) {
@@ -2725,87 +3403,6 @@
           form.reset();
         });
       }
-
-      var carousels = document.querySelectorAll("[data-carousel]");
-
-      carousels.forEach(function (carousel) {
-        var track = carousel.querySelector("[data-carousel-track]");
-        var slides = carousel.querySelectorAll("[data-carousel-slide]");
-        var dots = carousel.querySelectorAll("[data-carousel-dot]");
-        var prev = carousel.querySelector("[data-carousel-prev]");
-        var next = carousel.querySelector("[data-carousel-next]");
-        var index = 0;
-        var autoplayId = 0;
-
-        if (!track || !slides.length) {
-          return;
-        }
-
-        function render(nextIndex) {
-          index = (nextIndex + slides.length) % slides.length;
-          track.style.transform = "translateX(" + (-index * 100) + "%)";
-
-          dots.forEach(function (dot, dotIndex) {
-            var active = dotIndex === index;
-            dot.classList.toggle("is-active", active);
-            dot.setAttribute("aria-current", active ? "true" : "false");
-          });
-        }
-
-        function stopAutoplay() {
-          if (autoplayId) {
-            window.clearInterval(autoplayId);
-            autoplayId = 0;
-          }
-        }
-
-        function startAutoplay() {
-          stopAutoplay();
-
-          if (prefersReducedMotion.matches || slides.length < 2) {
-            return;
-          }
-
-          autoplayId = window.setInterval(function () {
-            render(index + 1);
-          }, 4600);
-        }
-
-        if (prev) {
-          prev.addEventListener("click", function () {
-            render(index - 1);
-            startAutoplay();
-          });
-        }
-
-        if (next) {
-          next.addEventListener("click", function () {
-            render(index + 1);
-            startAutoplay();
-          });
-        }
-
-        dots.forEach(function (dot, dotIndex) {
-          dot.addEventListener("click", function () {
-            render(dotIndex);
-            startAutoplay();
-          });
-        });
-
-        carousel.addEventListener("mouseenter", stopAutoplay);
-        carousel.addEventListener("mouseleave", startAutoplay);
-        carousel.addEventListener("focusin", stopAutoplay);
-        carousel.addEventListener("focusout", function () {
-          window.setTimeout(function () {
-            if (!carousel.contains(document.activeElement)) {
-              startAutoplay();
-            }
-          }, 0);
-        });
-
-        render(0);
-        startAutoplay();
-      });
 
       var items = document.querySelectorAll(".reveal");
 
