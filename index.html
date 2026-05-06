@@ -11,19 +11,17 @@
 <noscript><style>.page-loader{display:none!important}</style></noscript>
   <style>
     :root {
-      --blue: #4cb3ff;
-      --blue-deep: #0d6ddf;
-      --green: #8bdc57;
-      --navy: #0b1a2e;
-      --muted: #4d617a;
-      --violet: #68d957;
-      --violet-deep: #4fb54c;
-      --line: rgba(11, 26, 46, 0.12);
-      --bg: #eef4fb;
-      --bg-deep: #08111f;
+      --blue: #409aff;
+      --blue-deep: #155bd8;
+      --violet: #6f35e8;
+      --navy: #111735;
+      --muted: #586079;
+      --line: rgba(17, 23, 53, 0.12);
+      --bg: #f1f5ff;
+      --bg-deep: #090c23;
       --panel: rgba(255, 255, 255, 0.97);
-      --shadow: 0 20px 52px rgba(11, 26, 46, 0.1);
-      --shadow-deep: 0 34px 70px rgba(8, 17, 31, 0.28);
+      --shadow: 0 20px 52px rgba(17, 23, 53, 0.1);
+      --shadow-deep: 0 34px 70px rgba(9, 12, 35, 0.28);
       --radius: 28px;
     }
 
@@ -42,8 +40,8 @@
       line-height: 1.6;
       overflow-x: hidden;
       background:
-        radial-gradient(680px 380px at 0% 0%, rgba(76, 179, 255, 0.22), transparent 58%),
-        radial-gradient(620px 340px at 100% 0%, rgba(139, 220, 87, 0.18), transparent 58%),
+        radial-gradient(680px 380px at 0% 0%, rgba(64, 154, 255, 0.22), transparent 58%),
+        radial-gradient(620px 340px at 100% 0%, rgba(111, 53, 232, 0.18), transparent 58%),
         linear-gradient(180deg, #ffffff 0%, #f4f8fd 28%, var(--bg) 100%);
     }
 
@@ -80,8 +78,8 @@
       place-items: center;
       padding: 24px;
       background:
-        radial-gradient(560px 280px at 15% 12%, rgba(44, 168, 255, 0.18), transparent 60%),
-        radial-gradient(520px 260px at 85% 12%, rgba(122, 229, 74, 0.18), transparent 58%),
+        radial-gradient(560px 280px at 15% 12%, rgba(64, 154, 255, 0.18), transparent 60%),
+        radial-gradient(520px 260px at 85% 12%, rgba(111, 53, 232, 0.18), transparent 58%),
         linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(246, 251, 255, 0.98));
       transition: opacity 0.55s ease, visibility 0.55s ease;
     }
@@ -99,8 +97,8 @@
       border-radius: 32px;
       text-align: center;
       background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(44, 168, 255, 0.12);
-      box-shadow: 0 24px 44px rgba(18, 37, 64, 0.10);
+      border: 1px solid rgba(64, 154, 255, 0.12);
+      box-shadow: 0 24px 44px rgba(17, 23, 53, 0.10);
       backdrop-filter: blur(20px);
       overflow: hidden;
     }
@@ -110,8 +108,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(circle at top right, rgba(44, 168, 255, 0.14), transparent 36%),
-        radial-gradient(circle at bottom left, rgba(122, 229, 74, 0.14), transparent 42%);
+        radial-gradient(circle at top right, rgba(64, 154, 255, 0.14), transparent 36%),
+        radial-gradient(circle at bottom left, rgba(111, 53, 232, 0.14), transparent 42%);
       pointer-events: none;
     }
 
@@ -138,9 +136,9 @@
     }
 
     .loader-ring {
-      background: conic-gradient(from 90deg, rgba(44, 168, 255, 0.08), rgba(44, 168, 255, 0.95), rgba(122, 229, 74, 0.95), rgba(44, 168, 255, 0.08));
+      background: conic-gradient(from 90deg, rgba(64, 154, 255, 0.08), rgba(64, 154, 255, 0.95), rgba(111, 53, 232, 0.95), rgba(64, 154, 255, 0.08));
       animation: loaderSpin 2.1s linear infinite;
-      filter: drop-shadow(0 10px 18px rgba(44, 168, 255, 0.16));
+      filter: drop-shadow(0 10px 18px rgba(64, 154, 255, 0.16));
     }
 
     .loader-ring::before {
@@ -160,7 +158,7 @@
       width: min(230px, 86%);
       margin: 0 auto;
       object-fit: contain;
-      filter: drop-shadow(0 10px 20px rgba(18, 37, 64, 0.08));
+      filter: drop-shadow(0 10px 20px rgba(17, 23, 53, 0.08));
     }
 
     .loader-copy {
@@ -177,7 +175,7 @@
       margin-top: 20px;
       border-radius: 999px;
       overflow: hidden;
-      background: rgba(18, 37, 64, 0.08);
+      background: rgba(17, 23, 53, 0.08);
     }
 
     .loader-bar span {
@@ -185,7 +183,7 @@
       width: 38%;
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(135deg, var(--blue-deep), #23b5f5 55%, #23c685 100%);
+      background: linear-gradient(135deg, var(--blue-deep), #2f9bff 55%, #6f35e8 100%);
       animation: loaderSlide 1.15s ease-in-out infinite;
     }
 
@@ -195,7 +193,7 @@
       z-index: 20;
       background: rgba(255, 255, 255, 0.84);
       backdrop-filter: blur(16px);
-      border-bottom: 1px solid rgba(18, 37, 64, 0.08);
+      border-bottom: 1px solid rgba(17, 23, 53, 0.08);
     }
 
     .nav,
@@ -203,8 +201,8 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
-      padding: 14px 0;
+      gap: 18px;
+      padding: 16px 0;
     }
 
     .brand-link {
@@ -215,7 +213,7 @@
     }
 
     .brand-logo {
-      width: clamp(156px, 15vw, 210px);
+      width: clamp(64px, 6vw, 82px);
       height: auto;
       object-fit: contain;
     }
@@ -233,19 +231,13 @@
     }
 
     .menu {
-      margin-left: 0;
-      flex: 1 1 auto;
-      justify-content: center;
-      gap: 6px;
-      flex-wrap: nowrap;
-      min-width: 0;
+      margin-left: auto;
     }
 
     .actions {
-      margin-left: 0;
+      margin-left: auto;
       flex: 0 0 auto;
       justify-content: flex-end;
-      flex-wrap: nowrap;
     }
 
     .menu a,
@@ -257,15 +249,9 @@
       transition: background 0.2s ease, color 0.2s ease;
     }
 
-    .menu a {
-      padding: 10px 10px;
-      font-size: 14px;
-      white-space: nowrap;
-    }
-
     .menu a:hover,
     .footer-nav a:hover {
-      background: rgba(44, 168, 255, 0.08);
+      background: rgba(64, 154, 255, 0.08);
       color: var(--navy);
     }
 
@@ -277,12 +263,12 @@
       min-height: 48px;
       min-width: 0;
       padding: 0 18px;
-      border: 1px solid rgba(18, 37, 64, 0.1);
+      border: 1px solid rgba(17, 23, 53, 0.1);
       border-radius: 18px;
       background: rgba(255, 255, 255, 0.92);
       color: var(--navy);
       font-weight: 700;
-      box-shadow: 0 10px 22px rgba(18, 37, 64, 0.06);
+      box-shadow: 0 10px 22px rgba(17, 23, 53, 0.06);
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
     }
@@ -290,13 +276,13 @@
     .btn.primary {
       border: none;
       color: #ffffff;
-      background: linear-gradient(135deg, var(--blue-deep), #2aa7f5 50%, var(--violet) 100%);
-      box-shadow: 0 18px 30px rgba(13, 109, 223, 0.22);
+      background: linear-gradient(135deg, var(--blue-deep), #2f9bff 55%, #6f35e8 100%);
+      box-shadow: 0 18px 30px rgba(12, 116, 235, 0.2);
     }
 
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 18px 30px rgba(11, 26, 46, 0.12);
+      box-shadow: 0 18px 30px rgba(17, 23, 53, 0.12);
     }
 
     .hamburger {
@@ -306,7 +292,7 @@
       border: none;
       border-radius: 18px;
       background: #ffffff;
-      box-shadow: 0 10px 22px rgba(18, 37, 64, 0.06);
+      box-shadow: 0 10px 22px rgba(17, 23, 53, 0.06);
       cursor: pointer;
     }
 
@@ -328,11 +314,11 @@
       padding: 12px 14px;
       border-radius: 18px;
       background: #ffffff;
-      border: 1px solid rgba(18, 37, 64, 0.08);
+      border: 1px solid rgba(17, 23, 53, 0.08);
     }
 
     section {
-      padding: 40px 0;
+      padding: 46px 0;
     }
 
     .eyebrow {
@@ -341,13 +327,13 @@
       gap: 8px;
       padding: 10px 14px;
       border-radius: 999px;
-      border: 1px solid rgba(44, 168, 255, 0.14);
-      background: rgba(44, 168, 255, 0.06);
+      border: 1px solid rgba(64, 154, 255, 0.14);
+      background: rgba(64, 154, 255, 0.06);
       font-size: 11px;
       font-weight: 800;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #2b7ec3;
+      color: #285fd4;
     }
 
     .eyebrow::before,
@@ -356,7 +342,7 @@
       width: 9px;
       height: 9px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue-deep), var(--green));
+      background: linear-gradient(135deg, var(--blue-deep), var(--violet));
     }
 
     .hero {
@@ -373,9 +359,9 @@
     }
 
     .hero-grid {
-      grid-template-columns: minmax(0, 0.98fr) minmax(340px, 1.02fr);
-      align-items: stretch;
-      gap: 20px;
+      grid-template-columns: 1fr;
+      align-items: start;
+      justify-items: center;
     }
 
     .hero-copy,
@@ -395,7 +381,7 @@
       max-width: 520px;
       border-radius: 30px;
       background: rgba(255, 255, 255, 0.86);
-      border: 1px solid rgba(44, 168, 255, 0.12);
+      border: 1px solid rgba(64, 154, 255, 0.12);
       box-shadow: var(--shadow);
     }
 
@@ -403,6 +389,11 @@
       width: min(100%, 430px);
       height: auto;
       object-fit: contain;
+    }
+
+    .hero-copy {
+      max-width: 980px;
+      text-align: center;
     }
 
     h1,
@@ -414,21 +405,13 @@
     }
 
     h1 {
-      margin-top: 20px;
-      max-width: 8.6ch;
-      font-size: clamp(48px, 5.6vw, 78px);
+      margin: 20px auto 0;
+      max-width: 13ch;
+      font-size: clamp(44px, 6vw, 78px);
     }
 
     h2 {
       font-size: clamp(32px, 4vw, 52px);
-    }
-
-    .gradient-text {
-      background: linear-gradient(135deg, var(--blue-deep), var(--green));
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
     }
 
     p {
@@ -437,54 +420,86 @@
     }
 
     .hero-copy > p {
-      max-width: 58ch;
-      margin-top: 12px;
+      max-width: 620px;
+      margin: 12px auto 0;
       font-size: 17px;
-    }
-
-    .hero-bullets {
-      display: grid;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .hero-bullets span {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(13, 109, 223, 0.1);
-      color: var(--navy);
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    .hero-bullets i {
-      margin-top: 2px;
-      color: var(--blue-deep);
-      font-size: 18px;
-    }
-
-    .hero-proof {
-      margin-top: 16px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
     }
 
     .hero-actions {
       margin-top: 16px;
+      justify-content: center;
     }
 
     .hero-stats {
+      margin-top: 18px;
+      justify-content: center;
+    }
+
+    .proof-strip {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
-      margin-top: 18px;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .proof-item {
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(64, 154, 255, 0.13);
+      box-shadow: 0 18px 34px rgba(17, 23, 53, 0.08);
+    }
+
+    .proof-item strong {
+      display: block;
+      color: var(--navy);
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .proof-item span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .expertise-strip {
+      margin-top: 16px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(17, 23, 53, 0.05);
+      border: 1px solid rgba(17, 23, 53, 0.08);
+    }
+
+    .expertise-track {
+      display: flex;
+      width: max-content;
+      gap: 10px;
+      padding: 10px;
+      animation: marqueeFlow 24s linear infinite;
+    }
+
+    .expertise-track span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 0 16px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--navy);
+      box-shadow: 0 10px 24px rgba(17, 23, 53, 0.06);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
     }
 
     .hero-shell,
@@ -543,7 +558,6 @@
     .tile,
     .preview-card {
       transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease, background 0.28s ease;
-      height: 100%;
     }
 
     .service:hover,
@@ -552,13 +566,14 @@
     .tile:hover,
     .preview-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(13, 109, 223, 0.18);
+      border-color: rgba(21, 91, 216, 0.18);
       background: rgba(255, 255, 255, 0.98);
-      box-shadow: 0 24px 42px rgba(11, 26, 46, 0.12);
+      box-shadow: 0 24px 42px rgba(17, 23, 53, 0.12);
     }
 
     .hero-shell {
       position: relative;
+      width: min(100%, 920px);
       overflow: hidden;
       background: linear-gradient(180deg, rgba(243, 248, 255, 0.96), rgba(255, 255, 255, 0.96));
     }
@@ -571,7 +586,7 @@
       width: 260px;
       height: 260px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(44, 168, 255, 0.18), transparent 66%);
+      background: radial-gradient(circle, rgba(64, 154, 255, 0.18), transparent 66%);
     }
 
     .hero-shell::after {
@@ -582,7 +597,7 @@
       width: 220px;
       height: 220px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(122, 229, 74, 0.18), transparent 68%);
+      background: radial-gradient(circle, rgba(111, 53, 232, 0.18), transparent 68%);
     }
 
     .hero-shell > * {
@@ -604,13 +619,13 @@
       gap: 8px;
       padding: 10px 14px;
       border-radius: 999px;
-      background: rgba(122, 229, 74, 0.1);
-      border: 1px solid rgba(122, 229, 74, 0.18);
+      background: rgba(111, 53, 232, 0.1);
+      border: 1px solid rgba(111, 53, 232, 0.18);
       font-size: 11px;
       font-weight: 800;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #2f8b58;
+      color: #5633c7;
     }
 
     .showcase {
@@ -621,7 +636,7 @@
       padding: 16px 18px;
       border-radius: 24px;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(240, 248, 255, 0.9));
-      border: 1px solid rgba(44, 168, 255, 0.1);
+      border: 1px solid rgba(64, 154, 255, 0.1);
     }
 
     .logo-mark-wrap {
@@ -630,7 +645,7 @@
       padding: 10px;
       border-radius: 24px;
       background: rgba(255, 255, 255, 0.92);
-      box-shadow: 0 10px 24px rgba(18, 37, 64, 0.08);
+      box-shadow: 0 10px 24px rgba(17, 23, 53, 0.08);
       flex: 0 0 auto;
     }
 
@@ -646,204 +661,7 @@
       font-size: 14px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #2b7ec3;
-    }
-
-    .metric-stat strong {
-      font-size: 34px;
-      line-height: 1;
-      letter-spacing: -0.06em;
-    }
-
-    .metric-stat span {
-      font-size: 14px;
-    }
-
-    .dashboard-hero {
-      margin-top: 18px;
-      padding: 18px;
-      border-radius: 28px;
-      background: linear-gradient(160deg, #0d1b30, #122844 62%, #0d1e36);
-      box-shadow: var(--shadow-deep);
-      color: #ffffff;
-    }
-
-    .dashboard-hero strong,
-    .dashboard-hero h3 {
-      color: #ffffff;
-    }
-
-    .dashboard-hero span,
-    .dashboard-hero p,
-    .dashboard-hero small {
-      color: rgba(231, 238, 247, 0.8);
-    }
-
-    .dashboard-hero-head,
-    .impact-board-head,
-    .hero-trend-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-    }
-
-    .dashboard-hero-head strong {
-      display: block;
-      font-size: 22px;
-      letter-spacing: -0.04em;
-    }
-
-    .dashboard-hero-head span {
-      display: block;
-      margin-top: 6px;
-      font-size: 14px;
-    }
-
-    .dashboard-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 36px;
-      padding: 0 12px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: #ffffff;
-      font-size: 11px;
-      font-weight: 800;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-
-    .impact-board .dashboard-badge {
-      background: rgba(79, 181, 76, 0.1);
-      border-color: rgba(79, 181, 76, 0.14);
-      color: var(--violet-deep);
-    }
-
-    .hero-metric-grid,
-    .impact-mini-grid,
-    .workflow-stats {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-    }
-
-    .hero-metric-grid {
-      margin-top: 16px;
-    }
-
-    .hero-metric-card,
-    .impact-mini-card,
-    .workflow-stat {
-      padding: 16px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .hero-metric-card strong,
-    .impact-mini-card strong {
-      display: block;
-      font-size: 30px;
-      line-height: 1;
-      letter-spacing: -0.06em;
-    }
-
-    .hero-metric-card span,
-    .impact-mini-card span {
-      display: block;
-      margin-top: 8px;
-      font-size: 13px;
-    }
-
-    .hero-trend-panel,
-    .impact-stage-panel {
-      margin-top: 16px;
-      padding: 16px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .hero-trend-head strong,
-    .impact-stage-panel strong {
-      font-size: 18px;
-      letter-spacing: -0.03em;
-    }
-
-    .hero-trend-head small {
-      font-size: 12px;
-      font-weight: 700;
-      color: rgba(231, 238, 247, 0.74);
-    }
-
-    .trend-bars {
-      display: grid;
-      grid-template-columns: repeat(7, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .trend-bar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .trend-bar span {
-      position: relative;
-      width: 100%;
-      height: 82px;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.05);
-      overflow: hidden;
-    }
-
-    .trend-bar span::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: var(--h);
-      border-radius: 14px;
-      background: linear-gradient(180deg, #57c2ff, #84e166);
-    }
-
-    .trend-bar small {
-      font-size: 10px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: rgba(231, 238, 247, 0.62);
-    }
-
-    .pipeline-list {
-      display: grid;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .pipeline-item {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 12px 14px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .pipeline-item span,
-    .pipeline-item strong {
-      color: #ffffff;
-      font-size: 14px;
-      letter-spacing: 0;
+      color: #285fd4;
     }
 
     .contact-side h3 {
@@ -859,18 +677,6 @@
       margin-top: 8px;
     }
 
-    .centered-head {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .centered-head p {
-      max-width: 64ch;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     .steps {
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
@@ -880,8 +686,7 @@
     }
 
     .services {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      align-items: stretch;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     .service i,
@@ -893,8 +698,8 @@
       width: 48px;
       height: 48px;
       border-radius: 18px;
-      background: linear-gradient(145deg, rgba(44, 168, 255, 0.14), rgba(122, 229, 74, 0.18));
-      border: 1px solid rgba(44, 168, 255, 0.14);
+      background: linear-gradient(145deg, rgba(64, 154, 255, 0.14), rgba(111, 53, 232, 0.18));
+      border: 1px solid rgba(64, 154, 255, 0.14);
       color: var(--blue-deep);
       font-size: 22px;
     }
@@ -933,7 +738,7 @@
       width: 100%;
       padding: 15px 16px;
       border-radius: 18px;
-      border: 1px solid rgba(18, 37, 64, 0.12);
+      border: 1px solid rgba(17, 23, 53, 0.12);
       background: rgba(249, 252, 255, 0.96);
       color: var(--navy);
       outline: none;
@@ -970,7 +775,7 @@
       padding: 16px;
       border-radius: 22px;
       background: rgba(247, 251, 255, 0.92);
-      border: 1px solid rgba(44, 168, 255, 0.09);
+      border: 1px solid rgba(64, 154, 255, 0.09);
     }
 
     .contact-item strong {
@@ -979,241 +784,45 @@
       margin-bottom: 4px;
     }
 
-    .mission-grid {
-      display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
-      gap: 20px;
-      align-items: stretch;
-    }
-
-    .mission-copy,
-    .mission-card,
-    .preview-stage {
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 32px;
-      box-shadow: var(--shadow);
-    }
-
-    .mission-copy,
-    .mission-card {
-      padding: 24px;
-    }
-
-    .mission-points {
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .mission-points div {
-      padding: 14px 16px;
-      border-radius: 20px;
-      background: rgba(247, 249, 255, 0.96);
-      border: 1px solid rgba(76, 179, 255, 0.1);
-      color: var(--navy);
-      font-weight: 700;
-    }
-
-    .mission-card {
-      background: linear-gradient(180deg, rgba(247, 248, 255, 0.98), rgba(241, 244, 255, 0.96));
-    }
-
-    .mission-stat-grid {
-      display: grid;
-      gap: 16px;
-      margin-top: 10px;
-    }
-
-    .mission-stat strong {
-      display: block;
-      font-size: clamp(30px, 4vw, 44px);
-      letter-spacing: -0.06em;
-      color: var(--blue-deep);
-    }
-
-    .mission-stat span {
-      display: block;
-      margin-top: 6px;
-      color: var(--muted);
-      font-weight: 700;
-    }
-
-    .preview-stage {
-      display: grid;
-      grid-template-columns: 0.92fr 1.08fr;
-      gap: 20px;
-      align-items: center;
-      padding: 28px;
-      background: linear-gradient(180deg, rgba(240, 244, 255, 0.94), rgba(248, 249, 255, 0.98));
-    }
-
-    .preview-copy p {
-      max-width: 48ch;
-      margin-top: 12px;
-    }
-
-    .preview-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-
-    .device-showcase {
-      position: relative;
-      min-height: 360px;
-      display: grid;
-      place-items: center;
-    }
-
-    .device-showcase .phone-shell {
-      width: min(220px, 100%);
-      z-index: 2;
-    }
-
-    .preview-float {
-      position: absolute;
-      padding: 14px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.96);
-      border: 1px solid rgba(11, 26, 46, 0.08);
-      box-shadow: 0 18px 36px rgba(11, 26, 46, 0.12);
-    }
-
-    .preview-float.top {
-      top: 26px;
-      right: 8px;
-      width: 214px;
-    }
-
-    .preview-float.bottom {
-      left: 12px;
-      bottom: 18px;
-      width: 224px;
-    }
-
-    .preview-float strong {
-      display: block;
-      color: var(--navy);
-      font-size: 16px;
-    }
-
-    .preview-float small {
-      display: block;
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .preview-mini-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 8px;
-      margin-top: 12px;
-    }
-
-    .preview-mini-grid span {
-      display: block;
-      padding: 10px 12px;
-      border-radius: 14px;
-      background: rgba(76, 179, 255, 0.08);
-      color: var(--navy);
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .preview-bars {
-      display: flex;
-      align-items: end;
-      gap: 8px;
-      height: 72px;
-      margin-top: 12px;
-    }
-
-    .preview-bars span {
-      flex: 1 1 0;
-      border-radius: 999px 999px 8px 8px;
-      background: linear-gradient(180deg, var(--blue-deep), var(--green));
-    }
-
-    .preview-bars span:nth-child(1) {
-      height: 44%;
-    }
-
-    .preview-bars span:nth-child(2) {
-      height: 64%;
-    }
-
-    .preview-bars span:nth-child(3) {
-      height: 82%;
-    }
-
-    .preview-bars span:nth-child(4) {
-      height: 58%;
-    }
-
     footer {
-      margin-top: 24px;
-      padding: 20px 0 34px;
-      background: linear-gradient(135deg, #0b1a2e, #103859, #184b44);
-      color: #ffffff;
+      padding: 24px 0;
+      background: #ffffff;
+      border-top: 1px solid rgba(17, 23, 53, 0.08);
     }
 
     .footer {
-      padding-top: 22px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0;
     }
 
     .footer-brand {
-      max-width: 360px;
+      max-width: none;
     }
 
     .footer-nav {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(170px, 1fr));
-      gap: 12px;
-      width: min(560px, 100%);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: auto;
       justify-content: flex-end;
     }
 
     .footer-nav a {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 14px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: none;
-      color: #ffffff;
-      min-width: 0;
-      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      display: inline-flex;
+      padding: 8px 10px;
+      border-radius: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s ease, color 0.2s ease;
     }
 
     .footer-nav a:hover {
-      transform: translateY(-2px);
-      border-color: rgba(255, 255, 255, 0.22);
-      background: rgba(255, 255, 255, 0.12);
-      color: #ffffff;
-      box-shadow: none;
+      background: rgba(64, 154, 255, 0.08);
+      color: var(--navy);
     }
 
     .footer-nav i {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 42px;
-      height: 42px;
-      flex: 0 0 auto;
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.12);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      color: #ffffff;
-      font-size: 20px;
-      box-shadow: none;
+      display: none;
     }
 
     .footer-nav strong,
@@ -1223,7 +832,7 @@
     }
 
     .footer-nav strong {
-      color: #ffffff;
+      color: var(--navy);
       font-size: 15px;
       letter-spacing: -0.02em;
     }
@@ -1231,19 +840,19 @@
     .footer-nav small {
       margin-top: 3px;
       font-size: 12px;
-      color: rgba(255, 255, 255, 0.72);
+      color: var(--muted);
     }
 
     .footer-logo {
-      width: clamp(160px, 18vw, 220px);
+      width: clamp(70px, 7vw, 92px);
       height: auto;
       object-fit: contain;
     }
 
     .footer-note {
-      margin-top: 10px;
+      margin-top: 6px;
       font-size: 14px;
-      color: rgba(255, 255, 255, 0.74);
+      color: var(--muted);
     }
 
     .trust-line {
@@ -1253,8 +862,8 @@
       margin-top: 18px;
       padding: 10px 14px;
       border-radius: 999px;
-      background: rgba(18, 37, 64, 0.05);
-      border: 1px solid rgba(18, 37, 64, 0.08);
+      background: rgba(17, 23, 53, 0.05);
+      border: 1px solid rgba(17, 23, 53, 0.08);
       color: var(--navy);
       font-size: 13px;
       font-weight: 700;
@@ -1265,7 +874,7 @@
       width: 9px;
       height: 9px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue-deep), var(--green));
+      background: linear-gradient(135deg, var(--blue-deep), var(--violet));
     }
 
     .banner-shell {
@@ -1274,7 +883,7 @@
       justify-content: space-between;
       gap: 18px;
       color: #ffffff;
-      background: linear-gradient(135deg, #0c1a2f, #0d6ddf, #4fb54c);
+      background: linear-gradient(135deg, rgba(9, 12, 35, 0.98), rgba(21, 91, 216, 0.94), rgba(111, 53, 232, 0.88));
       box-shadow: var(--shadow-deep);
     }
 
@@ -1322,7 +931,7 @@
     }
 
     .feature-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
 
     .client-grid {
@@ -1347,12 +956,12 @@
       padding: 28px;
       border-radius: 36px;
       background:
-        radial-gradient(circle at top right, rgba(76, 179, 255, 0.12), transparent 28%),
-        radial-gradient(circle at bottom left, rgba(76, 179, 255, 0.1), transparent 32%),
-        linear-gradient(180deg, rgba(248, 251, 255, 0.98), rgba(238, 246, 255, 0.96));
-      border: 1px solid rgba(76, 179, 255, 0.08);
-      box-shadow: 0 24px 54px rgba(11, 26, 46, 0.08);
-      color: var(--navy);
+        radial-gradient(circle at top right, rgba(64, 154, 255, 0.22), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(111, 53, 232, 0.22), transparent 32%),
+        linear-gradient(145deg, #0b1233 0%, #141b47 48%, #101638 100%);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow-deep);
+      color: #ffffff;
     }
 
     .visual-shell::before {
@@ -1360,8 +969,23 @@
       position: absolute;
       inset: 0;
       background:
-        linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent 32%),
-        linear-gradient(180deg, transparent, rgba(76, 179, 255, 0.03));
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02), transparent 34%),
+        linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.04));
+      pointer-events: none;
+    }
+
+    .visual-shell::after {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      right: -180px;
+      top: -190px;
+      border-radius: 50%;
+      background: conic-gradient(from 180deg, rgba(64, 154, 255, 0.36), rgba(111, 53, 232, 0.22), rgba(64, 154, 255, 0.36));
+      filter: blur(6px);
+      opacity: 0.7;
+      animation: driftGlow 9s ease-in-out infinite alternate;
       pointer-events: none;
     }
 
@@ -1371,22 +995,22 @@
     }
 
     .visual-shell .eyebrow {
-      border-color: rgba(76, 179, 255, 0.14);
-      background: rgba(76, 179, 255, 0.08);
-      color: var(--blue-deep);
+      border-color: rgba(255, 255, 255, 0.12);
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
     }
 
     .visual-shell p,
     .visual-shell li,
     .visual-shell small,
     .visual-shell span {
-      color: var(--muted);
+      color: rgba(229, 237, 247, 0.8);
     }
 
     .visual-shell h2,
     .visual-shell h3,
     .visual-shell strong {
-      color: var(--navy);
+      color: #ffffff;
     }
 
     .story-layout,
@@ -1425,6 +1049,54 @@
       line-height: 1.55;
     }
 
+    .outcome-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .outcome-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 184px;
+      padding: 20px;
+      border-radius: 26px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .outcome-card::before {
+      content: "";
+      position: absolute;
+      inset: auto -30px -72px auto;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(64, 154, 255, 0.28), transparent 62%);
+    }
+
+    .outcome-card strong {
+      display: block;
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+    }
+
+    .outcome-card span {
+      display: block;
+      margin-top: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+    }
+
+    .outcome-card p {
+      margin-top: 18px;
+      max-width: 24ch;
+    }
+
     .signal-row {
       display: flex;
       align-items: center;
@@ -1439,9 +1111,8 @@
       gap: 8px;
       padding: 10px 12px;
       border-radius: 999px;
-      background: rgba(76, 179, 255, 0.08);
-      border: 1px solid rgba(76, 179, 255, 0.12);
-      color: var(--navy);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.04em;
@@ -1453,119 +1124,7 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--blue), var(--green));
-    }
-
-    .impact-board {
-      padding: 22px;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(11, 26, 46, 0.08);
-      box-shadow: var(--shadow);
-    }
-
-    .impact-board p {
-      margin-top: 8px;
-    }
-
-    .impact-mini-grid {
-      margin-top: 16px;
-    }
-
-    .impact-mini-card,
-    .workflow-stat,
-    .impact-stage-panel {
-      background: rgba(247, 249, 255, 0.96);
-      border: 1px solid rgba(11, 26, 46, 0.08);
-    }
-
-    .impact-mini-card strong {
-      color: var(--navy);
-    }
-
-    .impact-stage-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    .impact-stage-item > div:first-child {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 8px;
-    }
-
-    .impact-stage-item strong {
-      font-size: 14px;
-      letter-spacing: 0;
-    }
-
-    .impact-fill {
-      height: 10px;
-      border-radius: 999px;
-      background: rgba(11, 26, 46, 0.08);
-      overflow: hidden;
-    }
-
-    .impact-fill span {
-      display: block;
-      width: var(--w);
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(135deg, var(--blue-deep), var(--green));
-    }
-
-    .workflow-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .workflow-step {
-      padding: 18px;
-      border-radius: 22px;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(11, 26, 46, 0.08);
-    }
-
-    .workflow-step .step-no {
-      color: var(--blue-deep);
-      background: linear-gradient(135deg, rgba(76, 179, 255, 0.12), rgba(139, 220, 87, 0.16));
-      border-color: rgba(76, 179, 255, 0.14);
-    }
-
-    .workflow-step h3 {
-      margin-top: 14px;
-      font-size: 20px;
-      color: var(--navy);
-    }
-
-    .workflow-step p {
-      margin-top: 10px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .workflow-stats {
-      margin-top: 16px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .workflow-stat strong {
-      display: block;
-      color: var(--navy);
-      font-size: 18px;
-      letter-spacing: -0.03em;
-    }
-
-    .workflow-stat span {
-      display: block;
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 14px;
+      background: linear-gradient(135deg, var(--blue), var(--violet));
     }
 
     .story-gallery {
@@ -1596,16 +1155,137 @@
       object-fit: cover;
     }
 
+    .graphic-panel,
+    .slide-graphic {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 18%, rgba(64, 154, 255, 0.42), transparent 24%),
+        radial-gradient(circle at 82% 26%, rgba(111, 53, 232, 0.34), transparent 28%),
+        linear-gradient(145deg, rgba(16, 24, 70, 0.98), rgba(31, 48, 116, 0.92));
+    }
+
+    .graphic-panel::before,
+    .graphic-panel::after,
+    .slide-graphic::before,
+    .slide-graphic::after {
+      content: "";
+      position: absolute;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 18px 38px rgba(5, 10, 30, 0.22);
+      animation: floatPanel 5.8s ease-in-out infinite;
+    }
+
+    .graphic-panel::before {
+      width: 58%;
+      height: 34%;
+      left: 12%;
+      top: 16%;
+    }
+
+    .graphic-panel::after {
+      width: 44%;
+      height: 28%;
+      right: 10%;
+      bottom: 14%;
+      animation-delay: -1.8s;
+    }
+
+    .graphic-device,
+    .graphic-campus,
+    .graphic-code,
+    .graphic-mobile {
+      position: absolute;
+      inset: 18px;
+      z-index: 1;
+      border-radius: 26px;
+      background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.12) 1px, transparent 1px),
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+      background-size: 42px 42px;
+      opacity: 0.84;
+    }
+
+    .graphic-campus::before,
+    .graphic-campus::after {
+      content: "";
+      position: absolute;
+      left: 12%;
+      right: 12%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(64, 154, 255, 0.9), rgba(111, 53, 232, 0.86));
+      animation: dataPulse 2.8s ease-in-out infinite;
+    }
+
+    .graphic-campus::before {
+      height: 18px;
+      top: 28%;
+    }
+
+    .graphic-campus::after {
+      height: 18px;
+      top: 48%;
+      width: 56%;
+      animation-delay: -1s;
+    }
+
+    .graphic-code::before,
+    .graphic-code::after,
+    .graphic-mobile::before,
+    .graphic-mobile::after {
+      content: "";
+      position: absolute;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .graphic-code::before {
+      width: 62%;
+      height: 18px;
+      left: 14%;
+      top: 26%;
+      box-shadow: 0 42px 0 rgba(255, 255, 255, 0.12), 0 84px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .graphic-code::after {
+      width: 30%;
+      height: 110px;
+      right: 13%;
+      bottom: 14%;
+      background: linear-gradient(180deg, rgba(64, 154, 255, 0.3), rgba(111, 53, 232, 0.28));
+    }
+
+    .graphic-mobile::before {
+      width: 35%;
+      height: 72%;
+      left: 32%;
+      top: 12%;
+      border-radius: 34px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.08));
+    }
+
+    .graphic-mobile::after {
+      width: 22%;
+      height: 12px;
+      left: 38%;
+      top: 24%;
+      box-shadow: 0 42px 0 rgba(64, 154, 255, 0.35), 0 84px 0 rgba(111, 53, 232, 0.34);
+    }
+
     .image-card::after {
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(8, 17, 31, 0.08), rgba(8, 17, 31, 0.76));
+      background: linear-gradient(180deg, rgba(9, 12, 35, 0.08), rgba(9, 12, 35, 0.76));
     }
 
     .image-card.brand-card {
       background:
-        radial-gradient(circle at top left, rgba(139, 220, 87, 0.34), transparent 36%),
+        radial-gradient(circle at top left, rgba(111, 53, 232, 0.34), transparent 36%),
         linear-gradient(160deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02));
     }
 
@@ -1615,7 +1295,7 @@
     }
 
     .image-card.brand-card::after {
-      background: linear-gradient(180deg, rgba(8, 17, 31, 0.02), rgba(8, 17, 31, 0.64));
+      background: linear-gradient(180deg, rgba(9, 12, 35, 0.02), rgba(9, 12, 35, 0.64));
     }
 
     .image-card-content {
@@ -1658,21 +1338,16 @@
       margin-top: 22px;
       padding: 24px;
       border-radius: 30px;
-      background: rgba(255, 255, 255, 0.82);
-      border: 1px solid rgba(11, 26, 46, 0.08);
-      box-shadow: var(--shadow);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(14px);
     }
 
     .carousel-head {
       display: flex;
       align-items: flex-end;
-      justify-content: center;
+      justify-content: space-between;
       gap: 16px;
-    }
-
-    .carousel-head > div {
-      max-width: 720px;
-      text-align: center;
     }
 
     .carousel-head p {
@@ -1727,7 +1402,7 @@
 
     .carousel-dot.is-active {
       width: 34px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--violet));
       border-color: transparent;
     }
 
@@ -1748,10 +1423,16 @@
     }
 
     .slide-media {
+      position: relative;
       min-height: 304px;
       overflow: hidden;
       border-radius: 28px;
       border: 1px solid rgba(255, 255, 255, 0.1);
+      background:
+        radial-gradient(circle at 28% 18%, rgba(64, 154, 255, 0.34), transparent 30%),
+        radial-gradient(circle at 78% 28%, rgba(111, 53, 232, 0.28), transparent 34%),
+        linear-gradient(145deg, rgba(10, 19, 59, 0.98), rgba(28, 44, 108, 0.94));
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08), 0 18px 42px rgba(4, 8, 28, 0.28);
     }
 
     .slide-media img {
@@ -1760,11 +1441,152 @@
       object-fit: cover;
     }
 
-    .slide-copy {
+    .slide-graphic {
+      position: relative;
+      height: 100%;
+      min-height: 304px;
+    }
+
+    .motion-logo-image {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 3;
+      width: clamp(90px, 18vw, 142px);
+      height: clamp(90px, 18vw, 142px);
+      padding: 18px;
+      border-radius: 34px;
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 22px 42px rgba(4, 8, 28, 0.28);
+      transform: translate(-50%, -50%);
+      animation: motionLogoFloat 4.6s ease-in-out infinite;
+    }
+
+    .motion-orbit {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 2;
+      width: clamp(170px, 26vw, 260px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transform: translate(-50%, -50%);
+      animation: slowSpin 12s linear infinite;
+    }
+
+    .motion-orbit::before,
+    .motion-orbit::after {
+      content: "";
+      position: absolute;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--blue), var(--violet));
+      box-shadow: 0 0 26px rgba(64, 154, 255, 0.32);
+    }
+
+    .motion-orbit::before {
+      width: 46px;
+      height: 10px;
+      top: 16px;
+      right: 26px;
+    }
+
+    .motion-orbit::after {
+      width: 12px;
+      height: 12px;
+      left: 20px;
+      bottom: 44px;
+    }
+
+    .slide-graphic::before {
+      width: 68%;
+      height: 38%;
+      left: 11%;
+      top: 14%;
+    }
+
+    .slide-graphic::after {
+      width: 48%;
+      height: 30%;
+      right: 10%;
+      bottom: 13%;
+      animation-delay: -1.6s;
+    }
+
+    .slide-copy,
+    .free-demo-card {
       padding: 24px;
       border-radius: 28px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.08));
       border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .free-demo-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 304px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .free-demo-card::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -96px;
+      top: -104px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(64, 154, 255, 0.26), transparent 68%);
+      pointer-events: none;
+    }
+
+    .free-demo-card > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .free-demo-card h3 {
+      margin-top: 14px;
+      font-size: clamp(28px, 3vw, 42px);
+    }
+
+    .free-demo-card p {
+      margin-top: 12px;
+      max-width: 34ch;
+    }
+
+    .demo-card-points {
+      display: grid;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .demo-card-points span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 14px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-weight: 700;
+    }
+
+    .demo-card-points span::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex: 0 0 auto;
+      background: linear-gradient(135deg, var(--blue), var(--violet));
+    }
+
+    .free-demo-card .btn {
+      align-self: flex-start;
+      box-shadow: none;
     }
 
     .slide-copy p {
@@ -1796,7 +1618,7 @@
       margin-top: 8px;
       border-radius: 50%;
       flex: 0 0 auto;
-      background: linear-gradient(135deg, var(--blue), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--violet));
     }
 
     .preview-card {
@@ -1809,7 +1631,7 @@
       padding: 14px;
       border-radius: 22px;
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(237, 245, 255, 0.94));
-      border: 1px solid rgba(44, 168, 255, 0.12);
+      border: 1px solid rgba(64, 154, 255, 0.12);
       overflow: hidden;
     }
 
@@ -1823,7 +1645,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: rgba(18, 37, 64, 0.16);
+      background: rgba(17, 23, 53, 0.16);
     }
 
     .dashboard-grid {
@@ -1841,7 +1663,7 @@
     .phone-bottom {
       border-radius: 18px;
       background: rgba(255, 255, 255, 0.94);
-      border: 1px solid rgba(18, 37, 64, 0.08);
+      border: 1px solid rgba(17, 23, 53, 0.08);
     }
 
     .dashboard-stat,
@@ -1887,7 +1709,7 @@
     .mini-chart span {
       flex: 1 1 0;
       border-radius: 999px 999px 8px 8px;
-      background: linear-gradient(180deg, var(--blue-deep), rgba(122, 229, 74, 0.86));
+      background: linear-gradient(180deg, var(--blue-deep), rgba(111, 53, 232, 0.86));
     }
 
     .mini-chart span:nth-child(1) {
@@ -1911,7 +1733,7 @@
       margin: 0 auto;
       padding: 12px;
       border-radius: 32px;
-      background: linear-gradient(180deg, #152644, #0f1828);
+      background: linear-gradient(180deg, #172155, #111735);
       box-shadow: 0 20px 34px rgba(15, 24, 40, 0.24);
     }
 
@@ -1919,7 +1741,7 @@
       min-height: 206px;
       padding: 14px;
       border-radius: 24px;
-      background: linear-gradient(180deg, #ffffff, #eef5ff);
+      background: linear-gradient(180deg, #ffffff, #eef2ff);
     }
 
     .phone-card {
@@ -1938,7 +1760,7 @@
       width: 60px;
       height: 5px;
       border-radius: 999px;
-      background: rgba(18, 37, 64, 0.18);
+      background: rgba(17, 23, 53, 0.18);
     }
 
     .job-layout {
@@ -1959,7 +1781,7 @@
       display: block;
       padding: 10px 12px;
       border-radius: 14px;
-      background: rgba(44, 168, 255, 0.08);
+      background: rgba(64, 154, 255, 0.08);
       color: var(--navy);
       font-size: 12px;
       font-weight: 700;
@@ -1973,7 +1795,7 @@
 
     .job-list li {
       background: rgba(247, 251, 255, 0.94);
-      border: 1px solid rgba(18, 37, 64, 0.06);
+      border: 1px solid rgba(17, 23, 53, 0.06);
     }
 
     .job-list small {
@@ -1981,6 +1803,318 @@
       margin-top: 4px;
       color: var(--muted);
       font-size: 11px;
+    }
+
+    .product-stage {
+      position: relative;
+      min-height: 560px;
+      margin-top: 24px;
+      perspective: 1200px;
+      overflow: hidden;
+      border-radius: 38px;
+      background:
+        radial-gradient(circle at 50% 34%, rgba(64, 154, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 50% 66%, rgba(111, 53, 232, 0.16), transparent 34%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(240, 245, 255, 0.96));
+      border: 1px solid rgba(64, 154, 255, 0.16);
+      box-shadow: 0 34px 90px rgba(17, 23, 53, 0.12);
+    }
+
+    .product-stage::before,
+    .product-stage::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border: 1px solid rgba(21, 91, 216, 0.08);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .product-stage::before {
+      width: 720px;
+      height: 720px;
+    }
+
+    .product-stage::after {
+      width: 980px;
+      height: 980px;
+    }
+
+    .stage-screen,
+    .stage-phone,
+    .stage-card,
+    .stage-actionbar {
+      position: absolute;
+      z-index: 1;
+      border: 1px solid rgba(17, 23, 53, 0.08);
+      box-shadow: 0 28px 70px rgba(17, 23, 53, 0.14);
+      animation: stageFloat 6.5s ease-in-out infinite;
+    }
+
+    .stage-screen {
+      left: 50%;
+      top: 50%;
+      width: min(590px, 58vw);
+      min-height: 340px;
+      padding: 24px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(16px);
+      transform: translate(-50%, -50%) rotateX(3deg);
+    }
+
+    .stage-browser {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 48px;
+      padding: 8px 10px 8px 18px;
+      border-radius: 999px;
+      background: #081126;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .stage-browser span:last-child {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 14px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--blue-deep);
+      font-size: 11px;
+    }
+
+    .stage-screen h3 {
+      margin-top: 38px;
+      text-align: center;
+      font-size: clamp(30px, 4vw, 54px);
+      letter-spacing: -0.06em;
+    }
+
+    .stage-screen h3 span {
+      color: var(--blue-deep);
+    }
+
+    .stage-screen p {
+      max-width: 46ch;
+      margin: 12px auto 0;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .stage-dashboard {
+      display: grid;
+      grid-template-columns: 1.35fr 0.75fr;
+      gap: 16px;
+      margin: 28px auto 0;
+      max-width: 470px;
+    }
+
+    .stage-chart,
+    .stage-ai {
+      min-height: 132px;
+      padding: 14px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(17, 23, 53, 0.08);
+    }
+
+    .stage-bars {
+      display: flex;
+      align-items: end;
+      gap: 8px;
+      height: 78px;
+      margin-top: 16px;
+    }
+
+    .stage-bars span {
+      flex: 1 1 0;
+      border-radius: 999px 999px 6px 6px;
+      background: linear-gradient(180deg, var(--blue), var(--violet));
+      animation: barWave 2.8s ease-in-out infinite;
+    }
+
+    .stage-bars span:nth-child(1) { height: 38%; }
+    .stage-bars span:nth-child(2) { height: 64%; animation-delay: -0.4s; }
+    .stage-bars span:nth-child(3) { height: 48%; animation-delay: -0.8s; }
+    .stage-bars span:nth-child(4) { height: 80%; animation-delay: -1.2s; }
+    .stage-bars span:nth-child(5) { height: 58%; animation-delay: -1.6s; }
+
+    .stage-ai strong,
+    .stage-chart strong {
+      display: block;
+      color: var(--navy);
+      font-size: 13px;
+    }
+
+    .stage-ai span {
+      display: block;
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 14px;
+      background: rgba(64, 154, 255, 0.08);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .stage-phone {
+      width: 168px;
+      min-height: 336px;
+      padding: 12px;
+      border-radius: 34px;
+      background: linear-gradient(180deg, #121a4a, #071027);
+    }
+
+    .stage-phone.left {
+      left: 5%;
+      top: 90px;
+      transform: rotateY(24deg) rotateZ(-7deg);
+      animation-delay: -1.3s;
+    }
+
+    .stage-phone.right {
+      right: 5%;
+      top: 82px;
+      transform: rotateY(-24deg) rotateZ(7deg);
+      animation-delay: -2.4s;
+    }
+
+    .phone-ui {
+      min-height: 310px;
+      padding: 16px;
+      border-radius: 26px;
+      background: linear-gradient(180deg, #ffffff, #eff5ff);
+    }
+
+    .phone-ui.dark {
+      background:
+        radial-gradient(circle at 50% 26%, rgba(64, 154, 255, 0.85), transparent 18%),
+        linear-gradient(180deg, #101b62, #155bd8);
+      color: #ffffff;
+    }
+
+    .phone-ui.dark strong,
+    .phone-ui.dark small {
+      color: #ffffff;
+    }
+
+    .phone-meter {
+      display: grid;
+      place-items: center;
+      width: 92px;
+      height: 92px;
+      margin: 10px auto 18px;
+      border-radius: 50%;
+      background: conic-gradient(var(--blue) 0 82%, rgba(255, 255, 255, 0.16) 82% 100%);
+      color: #ffffff;
+      font-weight: 800;
+    }
+
+    .phone-ui-card {
+      margin-top: 12px;
+      padding: 13px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(17, 23, 53, 0.08);
+    }
+
+    .phone-ui-card strong {
+      display: block;
+      color: var(--navy);
+      font-size: 15px;
+    }
+
+    .phone-ui-card small {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .stage-card {
+      width: 190px;
+      padding: 18px;
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+    }
+
+    .stage-card.top {
+      left: 19%;
+      bottom: 86px;
+      transform: rotateZ(-5deg);
+      animation-delay: -3.1s;
+    }
+
+    .stage-card.bottom {
+      right: 18%;
+      bottom: 72px;
+      transform: rotateZ(5deg);
+      animation-delay: -4s;
+    }
+
+    .stage-card i {
+      display: inline-flex;
+      width: 42px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: rgba(64, 154, 255, 0.1);
+      color: var(--blue-deep);
+      font-size: 20px;
+    }
+
+    .stage-card strong {
+      display: block;
+      margin-top: 12px;
+      color: var(--navy);
+      font-size: 16px;
+    }
+
+    .stage-card span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .stage-actionbar {
+      left: 50%;
+      bottom: 26px;
+      display: flex;
+      gap: 10px;
+      padding: 9px;
+      border-radius: 999px;
+      background: rgba(9, 12, 35, 0.66);
+      backdrop-filter: blur(16px);
+      transform: translateX(-50%);
+      animation-delay: -2.2s;
+    }
+
+    .stage-actionbar span {
+      display: inline-flex;
+      width: 54px;
+      height: 54px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      font-size: 21px;
+    }
+
+    .stage-actionbar span:first-child {
+      background: linear-gradient(135deg, var(--blue), var(--violet));
     }
 
     .reveal {
@@ -2019,17 +2153,79 @@
       }
     }
 
-    @media (max-width: 1100px) {
-      .nav .menu {
-        display: none;
+    @keyframes driftGlow {
+      0% {
+        transform: translate3d(0, 0, 0) scale(1);
       }
-
-      .actions .btn:first-child {
-        display: none;
+      100% {
+        transform: translate3d(-42px, 36px, 0) scale(1.08);
       }
+    }
 
-      .hamburger {
-        display: inline-flex;
+    @keyframes floatPanel {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-12px);
+      }
+    }
+
+    @keyframes dataPulse {
+      0%,
+      100% {
+        transform: scaleX(0.76);
+        opacity: 0.7;
+      }
+      50% {
+        transform: scaleX(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes stageFloat {
+      0%,
+      100% {
+        translate: 0 0;
+      }
+      50% {
+        translate: 0 -14px;
+      }
+    }
+
+    @keyframes barWave {
+      0%,
+      100% {
+        transform: scaleY(0.82);
+      }
+      50% {
+        transform: scaleY(1);
+      }
+    }
+
+    @keyframes marqueeFlow {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes motionLogoFloat {
+      0%,
+      100% {
+        transform: translate(-50%, -50%) translateY(0) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) translateY(-12px) scale(1.04);
+      }
+    }
+
+    @keyframes slowSpin {
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
       }
     }
 
@@ -2042,19 +2238,11 @@
         grid-template-columns: 1fr;
       }
 
-      .hero-grid {
-        gap: 16px;
-      }
-
       .feature-grid,
       .client-grid,
       .why-grid,
       .preview-grid {
         grid-template-columns: 1fr;
-      }
-
-      h1 {
-        max-width: 100%;
       }
 
       .nav .menu {
@@ -2071,13 +2259,12 @@
 
       .hero-stats {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
       }
 
-      .services,
-      .client-grid,
-      .why-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .proof-strip,
+      .outcome-grid {
+        grid-template-columns: 1fr;
       }
 
       .footer {
@@ -2097,6 +2284,35 @@
 
       .showcase {
         align-items: flex-start;
+      }
+
+      .product-stage {
+        min-height: 720px;
+      }
+
+      .stage-screen {
+        top: 42%;
+        width: min(620px, calc(100% - 34px));
+      }
+
+      .stage-phone.left {
+        left: 28px;
+        top: 34px;
+      }
+
+      .stage-phone.right {
+        right: 28px;
+        top: 34px;
+      }
+
+      .stage-card.top {
+        left: 38px;
+        bottom: 108px;
+      }
+
+      .stage-card.bottom {
+        right: 38px;
+        bottom: 108px;
       }
     }
 
@@ -2127,7 +2343,7 @@
       }
 
       .brand-logo {
-        width: clamp(148px, 42vw, 190px);
+        width: clamp(58px, 18vw, 76px);
       }
 
       .hero-brand {
@@ -2199,23 +2415,7 @@
       }
 
       .footer-nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px;
-        width: 100%;
-      }
-
-      .footer-nav a {
-        padding: 13px;
-        border-radius: 20px;
-      }
-
-      .footer-nav strong {
-        font-size: 14px;
-      }
-
-      .footer-nav small {
-        font-size: 11px;
+        gap: 4px;
       }
 
       .service,
@@ -2229,6 +2429,58 @@
       .loader-shell {
         padding: 26px 20px 20px;
         border-radius: 28px;
+      }
+
+      .product-stage {
+        min-height: 840px;
+        border-radius: 28px;
+      }
+
+      .stage-screen {
+        top: 350px;
+        padding: 18px;
+      }
+
+      .stage-screen h3 {
+        margin-top: 24px;
+      }
+
+      .stage-dashboard {
+        grid-template-columns: 1fr;
+      }
+
+      .stage-phone {
+        width: 136px;
+        min-height: 278px;
+      }
+
+      .phone-ui {
+        min-height: 252px;
+        padding: 12px;
+      }
+
+      .stage-phone.left {
+        left: 16px;
+        top: 28px;
+      }
+
+      .stage-phone.right {
+        right: 16px;
+        top: 28px;
+      }
+
+      .stage-card {
+        width: 158px;
+      }
+
+      .stage-card.top {
+        left: 16px;
+        bottom: 100px;
+      }
+
+      .stage-card.bottom {
+        right: 16px;
+        bottom: 100px;
       }
     }
 
@@ -2246,7 +2498,7 @@
       }
 
       .brand-logo {
-        width: 160px;
+        width: 70px;
       }
 
       .hamburger {
@@ -2303,12 +2555,8 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .footer-nav {
-        grid-template-columns: 1fr;
-      }
-
       .footer-logo {
-        width: 180px;
+        width: 76px;
       }
 
       .loader-mark-wrap {
@@ -2319,6 +2567,32 @@
       .loader-mark {
         width: 68px;
         height: 68px;
+      }
+
+      .product-stage {
+        min-height: 900px;
+      }
+
+      .stage-screen {
+        top: 388px;
+        width: calc(100% - 24px);
+      }
+
+      .stage-phone.left,
+      .stage-phone.right {
+        transform: none;
+      }
+
+      .stage-phone.left {
+        left: 12px;
+      }
+
+      .stage-phone.right {
+        right: 12px;
+      }
+
+      .stage-actionbar {
+        bottom: 18px;
       }
 
       h1 {
@@ -2336,13 +2610,6 @@
         font-size: 15px;
       }
 
-      .services,
-      .client-grid,
-      .why-grid,
-      .hero-stats {
-        grid-template-columns: 1fr;
-      }
-
       .service h3,
       .step h3,
       .stat strong {
@@ -2353,7 +2620,7 @@
     @media (max-width: 420px) {
       .brand-logo,
       .footer-logo {
-        width: 148px;
+        width: 66px;
       }
 
       .container {
@@ -2391,7 +2658,6 @@
       }
 
       h1 {
-        max-width: 100%;
         font-size: clamp(30px, 10.4vw, 40px);
       }
 
@@ -2427,30 +2693,20 @@
         grid-template-columns: 1fr;
       }
 
-      .mission-grid,
-      .preview-stage {
-        grid-template-columns: 1fr;
-      }
-
       .story-metrics {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .hero-metric-grid,
-      .impact-mini-grid,
-      .workflow-grid,
-      .workflow-stats {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .outcome-grid {
+        grid-template-columns: 1fr;
       }
 
-      .feature-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      .image-card.large {
+        grid-row: span 1;
+        min-height: 320px;
       }
 
-      .carousel-head,
-      .dashboard-hero-head,
-      .impact-board-head,
-      .hero-trend-head {
+      .carousel-head {
         flex-direction: column;
         align-items: flex-start;
       }
@@ -2463,53 +2719,25 @@
         border-radius: 28px;
       }
 
-      .mission-copy,
-      .mission-card,
-      .preview-stage {
-        padding: 20px;
-        border-radius: 28px;
-      }
-
       .story-gallery {
         grid-template-columns: 1fr;
       }
 
-      .hero-metric-grid,
-      .impact-mini-grid,
-      .workflow-grid,
-      .workflow-stats {
-        grid-template-columns: 1fr;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .dashboard-hero,
-      .impact-board {
-        padding: 18px;
-        border-radius: 24px;
-      }
-
-      .device-showcase {
-        min-height: 320px;
-      }
-
-      .preview-float.top {
-        right: 0;
-        width: 190px;
-      }
-
-      .preview-float.bottom {
-        left: 0;
-        width: 200px;
+      .image-card,
+      .image-card.large {
+        min-height: 260px;
       }
 
       .slide-media {
         min-height: 240px;
       }
 
-      .slide-copy {
+    .slide-copy {
+      padding: 20px;
+    }
+
+      .free-demo-card {
+        min-height: auto;
         padding: 20px;
       }
 
@@ -2535,60 +2763,34 @@
         border-radius: 24px;
       }
 
-      .mission-copy,
-      .mission-card,
-      .preview-stage {
-        padding: 18px;
-        border-radius: 24px;
-      }
-
       .story-metrics {
         grid-template-columns: 1fr;
+      }
+
+      .outcome-grid {
+        gap: 10px;
       }
 
       .story-gallery {
         gap: 12px;
       }
 
-      .hero-bullets span {
-        padding: 10px 12px;
-      }
-
-      .dashboard-hero {
-        padding: 16px;
+      .image-card,
+      .image-card.large {
+        min-height: 220px;
         border-radius: 22px;
       }
 
-      .preview-actions {
-        flex-direction: column;
-        align-items: stretch;
+      .image-card.brand-card img {
+        padding: 26px;
       }
 
-      .preview-actions .btn {
-        width: 100%;
+      .image-card-content {
+        padding: 14px;
       }
 
-      .hero-metric-card strong,
-      .impact-mini-card strong {
-        font-size: 24px;
-      }
-
-      .device-showcase {
-        min-height: auto;
-        gap: 12px;
-      }
-
-      .preview-float {
-        position: relative;
-        top: auto;
-        right: auto;
-        bottom: auto;
-        left: auto;
-        width: 100%;
-      }
-
-      .trend-bar span {
-        height: 68px;
+      .image-card h3 {
+        font-size: 20px;
       }
 
       .carousel-btn {
@@ -2622,7 +2824,22 @@
       .loader-mark,
       .loader-bar span,
       .reveal,
-      .carousel-track {
+      .carousel-track,
+      .visual-shell::after,
+      .graphic-panel::before,
+      .graphic-panel::after,
+      .slide-graphic::before,
+      .slide-graphic::after,
+      .motion-logo-image,
+      .motion-orbit,
+      .graphic-campus::before,
+      .graphic-campus::after,
+      .stage-screen,
+      .stage-phone,
+      .stage-card,
+      .stage-actionbar,
+      .stage-bars span,
+      .expertise-track {
         animation: none !important;
         transition: none !important;
       }
@@ -2634,9 +2851,9 @@
     <div class="loader-shell">
       <div class="loader-mark-wrap" aria-hidden="true">
         <span class="loader-ring"></span>
-        <img class="loader-mark" src="images/logo2.png" alt="" />
+        <img class="loader-mark" src="images/logoChro-mark.jpeg" alt="" />
       </div>
-      <img class="loader-wordmark" src="images/logo1.jpeg" alt="Chromolog" />
+      <img class="loader-wordmark" src="images/logoChro-display.jpeg" alt="Chromolog" />
       <p class="loader-copy">Preparing AI-powered products and digital systems from Chromolog.</p>
       <div class="loader-bar" aria-hidden="true"><span></span></div>
     </div>
@@ -2646,12 +2863,12 @@
     <div class="container">
       <div class="nav">
         <a class="brand-link" href="#home" aria-label="Chromolog home">
-          <img class="brand-logo" src="images/logo1.jpeg" alt="Chromolog Smart Digital Solutions logo" />
+          <img class="brand-logo" src="images/logoChro-display.jpeg" alt="Chromolog Technologies logo" />
         </a>
 
         <nav class="menu" aria-label="Site sections">
           <a href="#about">About</a>
-          <a href="#impact">Impact</a>
+          <a href="#showcase">Showcase</a>
           <a href="#product">Product</a>
           <a href="#services">Services</a>
           <a href="#clients">Who We Serve</a>
@@ -2670,7 +2887,7 @@
       <div class="drawer" id="drawer">
         <nav>
           <a href="#about">About</a>
-          <a href="#impact">Impact</a>
+          <a href="#showcase">Showcase</a>
           <a href="#product">Product</a>
           <a href="#services">Services</a>
           <a href="#clients">Who We Serve</a>
@@ -2685,112 +2902,83 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-copy reveal">
-            <span class="eyebrow" style="margin-top: 18px;">Built for modern campuses &amp; growth teams</span>
-            <h1>AI-powered placement, training &amp; operations automation that <span class="gradient-text">turns workflows into outcomes</span></h1>
-            <p>Chromolog builds products and digital systems that help colleges, training institutes, and organizations manage workflows, communication, and performance from one clear control layer.</p>
+            <span class="eyebrow" style="margin-top: 18px;">AI-Powered Product &amp; Service Company</span>
+            <h1>Smart Digital Solutions That Move With You</h1>
+            <p>Premium web, mobile, AI, and business platforms for modern teams.</p>
 
-            <div class="hero-bullets">
-              <span><i class="ri-check-line" aria-hidden="true"></i>AI-powered eligibility, readiness scoring, and smart routing.</span>
-              <span><i class="ri-check-line" aria-hidden="true"></i>Automated job, training, interview, and notification workflows.</span>
-              <span><i class="ri-check-line" aria-hidden="true"></i>Unified dashboards for product delivery, campus operations, and service systems.</span>
-            </div>
-
-            <div class="hero-proof">Placement workflows &bull; Institutional software &bull; Web and mobile delivery</div>
+            <div class="trust-line">Secure &bull; Scalable &bull; Reliable</div>
 
             <div class="hero-actions">
               <a class="btn primary" href="#contact"><i class="ri-rocket-line" aria-hidden="true"></i>Request Demo</a>
-              <a class="btn" href="#product"><i class="ri-layout-grid-fill" aria-hidden="true"></i>Explore Alphagrew</a>
+              <a class="btn" href="#product"><i class="ri-layout-grid-fill" aria-hidden="true"></i>View Our Product</a>
+            </div>
+
+            <div class="proof-strip" aria-label="Chromolog delivery highlights">
+              <div class="proof-item">
+                <strong>AI</strong>
+                <span>Product-first builds</span>
+              </div>
+              <div class="proof-item">
+                <strong>Full</strong>
+                <span>Web, mobile, systems</span>
+              </div>
+              <div class="proof-item">
+                <strong>One</strong>
+                <span>Partner from idea to launch</span>
+              </div>
             </div>
 
             <div class="hero-stats">
-              <div class="stat metric-stat">
-                <strong>10x</strong>
-                <span>Faster coordination across placements, training, and readiness workflows.</span>
+              <div class="stat">
+                <strong>AI Platforms</strong>
+                <span>Automation, insights, and smarter workflows.</span>
               </div>
-              <div class="stat metric-stat">
-                <strong>360&deg;</strong>
-                <span>Visibility into jobs, interviews, notifications, and performance analytics.</span>
+              <div class="stat">
+                <strong>Web &amp; Mobile</strong>
+                <span>Fast, secure, responsive product experiences.</span>
               </div>
-              <div class="stat metric-stat">
-                <strong>24/7</strong>
-                <span>Automation support through AI nudges, alerts, and operational tracking.</span>
+              <div class="stat">
+                <strong>Custom Systems</strong>
+                <span>Software shaped around real operations.</span>
               </div>
             </div>
           </div>
 
           <aside class="hero-shell reveal">
             <div class="hero-top">
-              <span class="eyebrow">Alphagrew Operations Cloud</span>
-              <span class="pill">Live Dashboards</span>
+              <span class="eyebrow">Chromolog Ecosystem</span>
+              <span class="pill">Secure &bull; Scalable &bull; Reliable</span>
             </div>
 
             <div class="showcase">
               <div class="logo-mark-wrap">
-                <img src="images/logo2.png" alt="Chromolog logo mark" />
+                <img src="images/logoChro-mark.jpeg" alt="Chromolog logo mark" />
               </div>
               <div>
-                <strong>Unified Product Layer</strong>
-                <p>Alphagrew brings placements, training, communication, and performance visibility into one practical platform.</p>
+                <strong>Our Flagship Product</strong>
+                <p>Alphagrew is built for campus placements, training workflows, interview readiness, and performance analytics.</p>
               </div>
             </div>
 
-            <div class="dashboard-hero" aria-label="Alphagrew dashboard preview">
-              <div class="dashboard-hero-head">
-                <div>
-                  <strong>Placement Dashboard</strong>
-                  <span>Track readiness, active drives, and interview movement at a glance.</span>
-                </div>
-                <span class="dashboard-badge">Live Overview</span>
-              </div>
+            <h2>Alphagrew + Custom Digital Platforms</h2>
+            <p style="margin-top: 12px;">Clean platforms for placements, CRM, LMS, HRM, and business operations.</p>
 
-              <div class="hero-metric-grid">
-                <div class="hero-metric-card">
-                  <strong>214</strong>
-                  <span>Eligible students</span>
-                </div>
-                <div class="hero-metric-card">
-                  <strong>18</strong>
-                  <span>Active drives</span>
-                </div>
-                <div class="hero-metric-card">
-                  <strong>84%</strong>
-                  <span>Readiness score</span>
-                </div>
-                <div class="hero-metric-card">
-                  <strong>27</strong>
-                  <span>Interviews this week</span>
-                </div>
+            <div class="panel-tiles" style="margin-top: 20px;">
+              <div class="tile">
+                <strong>Placement Automation</strong>
+                <span>Jobs, applications, and readiness in one flow.</span>
               </div>
-
-              <div class="hero-trend-panel">
-                <div class="hero-trend-head">
-                  <strong>7-day readiness trend</strong>
-                  <small>Updated in real time</small>
-                </div>
-                <div class="trend-bars" aria-hidden="true">
-                  <div class="trend-bar"><span style="--h: 36px;"></span><small>Mon</small></div>
-                  <div class="trend-bar"><span style="--h: 42px;"></span><small>Tue</small></div>
-                  <div class="trend-bar"><span style="--h: 48px;"></span><small>Wed</small></div>
-                  <div class="trend-bar"><span style="--h: 44px;"></span><small>Thu</small></div>
-                  <div class="trend-bar"><span style="--h: 56px;"></span><small>Fri</small></div>
-                  <div class="trend-bar"><span style="--h: 62px;"></span><small>Sat</small></div>
-                  <div class="trend-bar"><span style="--h: 68px;"></span><small>Sun</small></div>
-                </div>
+              <div class="tile">
+                <strong>AI Readiness Tools</strong>
+                <span>Resume checks, mock interviews, and scoring.</span>
               </div>
-
-              <div class="pipeline-list">
-                <div class="pipeline-item">
-                  <span>Auto eligibility checks</span>
-                  <strong>Running</strong>
-                </div>
-                <div class="pipeline-item">
-                  <span>Interview reminders</span>
-                  <strong>Scheduled</strong>
-                </div>
-                <div class="pipeline-item">
-                  <span>Readiness insights</span>
-                  <strong>Live</strong>
-                </div>
+              <div class="tile">
+                <strong>Institution Systems</strong>
+                <span>Structured systems for growing organizations.</span>
+              </div>
+              <div class="tile">
+                <strong>Web &amp; Mobile Delivery</strong>
+                <span>Sharp experiences across every device.</span>
               </div>
             </div>
           </aside>
@@ -2800,33 +2988,208 @@
 
     <section id="about">
       <div class="container">
-        <div class="mission-grid">
-          <div class="mission-copy reveal">
-            <span class="eyebrow">Our Mission</span>
-            <h2 style="margin-top: 14px;">Build practical AI products that teams can actually run with every day.</h2>
-            <p style="margin-top: 12px;">Chromolog is focused on product-led digital systems that simplify operations, improve visibility, and create cleaner user journeys for institutions and businesses.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Who We Are</span>
+          <h2 style="margin-top: 14px;">Technology built for clarity, speed, and scale.</h2>
+          <p>Chromolog creates intelligent digital systems for institutions, startups, and enterprises.</p>
+        </div>
 
-            <div class="mission-points">
-              <div>Product thinking first, then services around the workflow.</div>
-              <div>AI used for practical scoring, automation, and decision support.</div>
-              <div>Interfaces designed to stay clear across dashboard, web, and mobile views.</div>
+        <div class="steps">
+          <article class="step reveal">
+            <span class="step-no">1</span>
+            <h3>Intelligent Systems</h3>
+            <p>We design practical digital products that bring AI-powered features into real workflows.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">2</span>
+            <h3>Scalable Architecture</h3>
+            <p>Our platforms are built to support growth across institutions, teams, and expanding operations.</p>
+          </article>
+          <article class="step reveal">
+            <span class="step-no">3</span>
+            <h3>User-Friendly Experiences</h3>
+            <p>We focus on clean, usable interfaces that help teams adopt systems with confidence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="visual-story" id="showcase">
+      <div class="container">
+        <div class="visual-shell">
+          <div class="story-layout">
+            <div class="story-copy reveal">
+              <span class="eyebrow">Visual Showcase</span>
+              <h2 style="margin-top: 16px;">Professional interfaces with motion, depth, and brand energy.</h2>
+              <p style="margin-top: 12px;">A cleaner visual story for software products, campus platforms, and enterprise systems.</p>
+
+              <div class="story-metrics">
+                <div class="story-metric">
+                  <strong>Clear Layouts</strong>
+                  <span>Simple sections that are easy to scan.</span>
+                </div>
+                <div class="story-metric">
+                  <strong>Visual Depth</strong>
+                  <span>Animated surfaces create a premium feel.</span>
+                </div>
+                <div class="story-metric">
+                  <strong>Smooth Motion</strong>
+                  <span>Subtle movement keeps users engaged.</span>
+                </div>
+              </div>
+
+              <div class="signal-row">
+                <span>Placement Platforms</span>
+                <span>Enterprise Systems</span>
+                <span>Mobile Products</span>
+                <span>AI Workflows</span>
+              </div>
+
+              <div class="outcome-grid">
+                <article class="outcome-card">
+                  <strong>Less</strong>
+                  <span>Manual work</span>
+                  <p>Automate repetitive placement and operations tasks.</p>
+                </article>
+                <article class="outcome-card">
+                  <strong>Live</strong>
+                  <span>Team visibility</span>
+                  <p>Give teams live dashboards instead of scattered updates.</p>
+                </article>
+                <article class="outcome-card">
+                  <strong>Any</strong>
+                  <span>Digital access</span>
+                  <p>Support students, admins, and teams across devices.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="story-gallery reveal">
+              <article class="image-card large">
+                <div class="graphic-panel">
+                  <span class="graphic-device"></span>
+                </div>
+                <div class="image-card-content">
+                  <span class="image-card-tag">Delivery</span>
+                  <h3>Practical software with polished execution.</h3>
+                  <p>Built for teams that need speed and structure.</p>
+                </div>
+              </article>
+
+              <article class="image-card brand-card">
+                <img src="images/1000326179.png" alt="Chromolog brand symbol" />
+                <div class="image-card-content">
+                  <span class="image-card-tag">Brand Signal</span>
+                  <h3>Sharper visual identity</h3>
+                  <p>Blue and violet tones match the new logo.</p>
+                </div>
+              </article>
+
+              <article class="image-card">
+                <div class="graphic-panel">
+                  <span class="graphic-code"></span>
+                </div>
+                <div class="image-card-content">
+                  <span class="image-card-tag">Product</span>
+                  <h3>Clean product storytelling</h3>
+                  <p>Less text, stronger visuals, better focus.</p>
+                </div>
+              </article>
             </div>
           </div>
 
-          <div class="mission-card reveal">
-            <span class="eyebrow">What We Optimize</span>
-            <div class="mission-stat-grid">
-              <div class="mission-stat">
-                <strong>1 Platform</strong>
-                <span>Placements, readiness, analytics, and communication in one experience.</span>
+          <div class="carousel-shell reveal" data-carousel>
+            <div class="carousel-head">
+              <div>
+                <span class="eyebrow">Live Motion</span>
+                <h3 style="margin-top: 14px;">Animated views of what Chromolog builds.</h3>
               </div>
-              <div class="mission-stat">
-                <strong>3 Core Layers</strong>
-                <span>Capture, automate, and report across every workflow.</span>
+
+              <div class="carousel-controls">
+                <button class="carousel-btn" type="button" data-carousel-prev aria-label="Show previous slide">
+                  <i class="ri-arrow-left-line" aria-hidden="true"></i>
+                </button>
+                <div class="carousel-dots" aria-label="Carousel navigation">
+                  <button class="carousel-dot is-active" type="button" data-carousel-dot="0" aria-label="Go to slide 1"></button>
+                  <button class="carousel-dot" type="button" data-carousel-dot="1" aria-label="Go to slide 2"></button>
+                  <button class="carousel-dot" type="button" data-carousel-dot="2" aria-label="Go to slide 3"></button>
+                </div>
+                <button class="carousel-btn" type="button" data-carousel-next aria-label="Show next slide">
+                  <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                </button>
               </div>
-              <div class="mission-stat">
-                <strong>24/7 Visibility</strong>
-                <span>Live dashboards and alerts for teams that need faster decisions.</span>
+            </div>
+
+            <div class="carousel-window">
+              <div class="carousel-track" data-carousel-track>
+                <article class="carousel-slide" data-carousel-slide>
+                  <div class="slide-media">
+                    <div class="slide-graphic">
+                      <span class="graphic-campus"></span>
+                    </div>
+                    <span class="motion-orbit" aria-hidden="true"></span>
+                    <img class="motion-logo-image" src="images/logoChro-mark.jpeg" alt="" />
+                  </div>
+                  <div class="free-demo-card">
+                    <div>
+                      <span class="image-card-tag">Free Demo</span>
+                      <h3>See Alphagrew in action.</h3>
+                      <p>Explore placement workflows, AI readiness, and analytics with a guided demo.</p>
+                    </div>
+                    <div class="demo-card-points">
+                      <span>Placement automation</span>
+                      <span>AI readiness tools</span>
+                      <span>Live dashboards</span>
+                    </div>
+                    <a class="btn primary" href="#contact">Book Free Demo</a>
+                  </div>
+                </article>
+
+                <article class="carousel-slide" data-carousel-slide>
+                  <div class="slide-media">
+                    <div class="slide-graphic">
+                      <span class="graphic-code"></span>
+                    </div>
+                    <span class="motion-orbit" aria-hidden="true"></span>
+                    <img class="motion-logo-image" src="images/logoChro-mark.jpeg" alt="" />
+                  </div>
+                  <div class="free-demo-card">
+                    <div>
+                      <span class="image-card-tag">Free Demo</span>
+                      <h3>Plan your custom system.</h3>
+                      <p>Walk through CRM, LMS, HRM, and internal software ideas with the Chromolog team.</p>
+                    </div>
+                    <div class="demo-card-points">
+                      <span>Workflow review</span>
+                      <span>Product architecture</span>
+                      <span>Delivery roadmap</span>
+                    </div>
+                    <a class="btn primary" href="#contact">Book Free Demo</a>
+                  </div>
+                </article>
+
+                <article class="carousel-slide" data-carousel-slide>
+                  <div class="slide-media">
+                    <div class="slide-graphic">
+                      <span class="graphic-mobile"></span>
+                    </div>
+                    <span class="motion-orbit" aria-hidden="true"></span>
+                    <img class="motion-logo-image" src="images/logoChro-mark.jpeg" alt="" />
+                  </div>
+                  <div class="free-demo-card">
+                    <div>
+                      <span class="image-card-tag">Free Demo</span>
+                      <h3>Preview mobile + AI features.</h3>
+                      <p>See responsive product screens, smart alerts, and AI-powered workflows for your team.</p>
+                    </div>
+                    <div class="demo-card-points">
+                      <span>Mobile-first screens</span>
+                      <span>Smart notifications</span>
+                      <span>AI workflow ideas</span>
+                    </div>
+                    <a class="btn primary" href="#contact">Book Free Demo</a>
+                  </div>
+                </article>
               </div>
             </div>
           </div>
@@ -2834,145 +3197,26 @@
       </div>
     </section>
 
-    <section class="visual-story" id="impact">
+    <section aria-label="Chromolog expertise">
       <div class="container">
-        <div class="visual-shell">
-          <div class="story-layout">
-            <div class="story-copy reveal">
-              <span class="eyebrow">The Alphagrew Impact</span>
-              <h2 style="margin-top: 16px;">From placement automation to measurable campus outcomes.</h2>
-              <p style="margin-top: 12px;">This section now follows a cleaner SaaS product rhythm: focused benefits, live-style metrics, and a simple workflow story that relates directly to what Alphagrew and Chromolog products deliver.</p>
-
-              <div class="story-metrics">
-                <div class="story-metric">
-                  <strong>10x faster shortlisting</strong>
-                  <span>Auto filtering and readiness scoring reduce manual review during drives.</span>
-                </div>
-                <div class="story-metric">
-                  <strong>Unified operational visibility</strong>
-                  <span>Jobs, student progress, communication, and analytics live in one control center.</span>
-                </div>
-                <div class="story-metric">
-                  <strong>Higher student readiness</strong>
-                  <span>Mock interviews, tests, resume reviews, and performance signals stay connected.</span>
-                </div>
-                <div class="story-metric">
-                  <strong>Built for real institutions</strong>
-                  <span>Custom workflows fit colleges, training teams, and operational service environments.</span>
-                </div>
-              </div>
-
-              <div class="signal-row">
-                <span>Job Drives</span>
-                <span>Readiness Scores</span>
-                <span>Mock Interviews</span>
-                <span>Performance Analytics</span>
-              </div>
-            </div>
-
-            <div class="impact-board reveal">
-              <div class="impact-board-head">
-                <div>
-                  <strong>Operational Snapshot</strong>
-                  <p>One glance tells your team what is moving, what needs attention, and where support should go next.</p>
-                </div>
-                <span class="dashboard-badge">Today</span>
-              </div>
-
-              <div class="impact-mini-grid">
-                <div class="impact-mini-card">
-                  <strong>128</strong>
-                  <span>Placement ready</span>
-                </div>
-                <div class="impact-mini-card">
-                  <strong>94</strong>
-                  <span>Training active</span>
-                </div>
-                <div class="impact-mini-card">
-                  <strong>36</strong>
-                  <span>Needs support</span>
-                </div>
-                <div class="impact-mini-card">
-                  <strong>12</strong>
-                  <span>Upcoming drives</span>
-                </div>
-              </div>
-
-              <div class="impact-stage-panel">
-                <strong>Readiness distribution</strong>
-                <div class="impact-stage-list">
-                  <div class="impact-stage-item">
-                    <div>
-                      <span>Ready</span>
-                      <strong>52%</strong>
-                    </div>
-                    <div class="impact-fill"><span style="--w: 52%;"></span></div>
-                  </div>
-                  <div class="impact-stage-item">
-                    <div>
-                      <span>Improving</span>
-                      <strong>31%</strong>
-                    </div>
-                    <div class="impact-fill"><span style="--w: 31%;"></span></div>
-                  </div>
-                  <div class="impact-stage-item">
-                    <div>
-                      <span>Needs support</span>
-                      <strong>17%</strong>
-                    </div>
-                    <div class="impact-fill"><span style="--w: 17%;"></span></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-shell reveal">
-            <div class="carousel-head">
-              <div>
-                <span class="eyebrow">How It Works</span>
-                <h3 style="margin-top: 14px;">From capture to placement in four clean steps.</h3>
-                <p>Built like a focused SaaS flow: connect data, score readiness, automate engagement, and track progress through one dashboard.</p>
-              </div>
-            </div>
-
-            <div class="workflow-grid">
-              <article class="workflow-step">
-                <span class="step-no">1</span>
-                <h3>Capture</h3>
-                <p>Collect student profiles, job requirements, applications, and training signals in one place.</p>
-              </article>
-              <article class="workflow-step">
-                <span class="step-no">2</span>
-                <h3>Score</h3>
-                <p>Use AI-powered rules to identify eligibility, readiness, and the next best action.</p>
-              </article>
-              <article class="workflow-step">
-                <span class="step-no">3</span>
-                <h3>Automate</h3>
-                <p>Trigger reminders, notifications, practice workflows, and interview coordination automatically.</p>
-              </article>
-              <article class="workflow-step">
-                <span class="step-no">4</span>
-                <h3>Track</h3>
-                <p>Monitor outcomes, conversion trends, and student performance through clean dashboards.</p>
-              </article>
-            </div>
-
-            <div class="workflow-stats">
-              <div class="workflow-stat">
-                <strong>1 control center</strong>
-                <span>Jobs, tests, interviews, communication, analytics, and reporting.</span>
-              </div>
-              <div class="workflow-stat">
-                <strong>Real-time visibility</strong>
-                <span>Teams see who is ready, what is blocked, and what is improving.</span>
-              </div>
-              <div class="workflow-stat">
-                <strong>Custom delivery</strong>
-                <span>The same product thinking can extend into CRM, LMS, HRM, and service systems.</span>
-              </div>
-            </div>
+        <div class="expertise-strip reveal">
+          <div class="expertise-track">
+            <span>CRM</span>
+            <span>LMS</span>
+            <span>HRM</span>
+            <span>Placement Platforms</span>
+            <span>Mobile Apps</span>
+            <span>AI Workflows</span>
+            <span>Dashboards</span>
+            <span>Custom Software</span>
+            <span>CRM</span>
+            <span>LMS</span>
+            <span>HRM</span>
+            <span>Placement Platforms</span>
+            <span>Mobile Apps</span>
+            <span>AI Workflows</span>
+            <span>Dashboards</span>
+            <span>Custom Software</span>
           </div>
         </div>
       </div>
@@ -2984,7 +3228,7 @@
           <div class="banner-copy">
             <span class="eyebrow" style="background: rgba(255, 255, 255, 0.12); border-color: rgba(255, 255, 255, 0.22); color: #ffffff;">Free Demo</span>
             <h2 style="margin-top: 14px;">Book a Free Demo of Alphagrew Today</h2>
-            <p>See how Alphagrew simplifies placement management, improves interview readiness, and gives your team clearer visibility across the student placement journey.</p>
+          <p>Placement management, readiness, and analytics in one product.</p>
           </div>
           <div class="banner-actions">
             <a class="btn primary" href="#contact">Request Demo</a>
@@ -2996,20 +3240,19 @@
 
     <section id="product">
       <div class="container">
-        <div class="section-head reveal centered-head">
-          <span class="eyebrow">Powerful Features. <span class="gradient-text">One Platform.</span></span>
+        <div class="section-head reveal">
+          <span class="eyebrow">Our Flagship Product</span>
           <h2 style="margin-top: 14px;">Alphagrew</h2>
-          <p>Alphagrew is an AI-powered placement and training platform built for colleges and institutes that need cleaner workflows, better visibility, and stronger student outcomes.</p>
-          <p>Everything from job publishing and interview readiness to analytics and communication is connected through one product experience.</p>
+          <p>Alphagrew helps colleges manage placements, training, interviews, and student readiness.</p>
         </div>
 
         <div class="showcase reveal">
           <div class="logo-mark-wrap">
-            <img src="images/logo2.png" alt="Chromolog logo mark" />
+            <img src="images/logoChro-mark.jpeg" alt="Chromolog logo mark" />
           </div>
           <div>
             <strong>Alphagrew</strong>
-            <p>AI-powered placement and training software that connects job management, student practice, analytics, and interview readiness in one system.</p>
+            <p>AI-powered placement and training software.</p>
           </div>
           <a class="btn primary" href="#contact">Request Demo</a>
         </div>
@@ -3018,32 +3261,37 @@
           <article class="service reveal">
             <i class="ri-filter-3-line" aria-hidden="true"></i>
             <h3>Smart Eligibility &amp; Auto Filtering</h3>
-            <p>Automatically identify eligible students and reduce manual filtering across placement workflows.</p>
+            <p>Identify eligible students faster.</p>
           </article>
           <article class="service reveal">
             <i class="ri-briefcase-4-line" aria-hidden="true"></i>
             <h3>Job &amp; Application Management</h3>
-            <p>Publish jobs, collect applications, and track student progress through one central system.</p>
+            <p>Publish jobs and track applications.</p>
           </article>
           <article class="service reveal">
             <i class="ri-file-search-line" aria-hidden="true"></i>
             <h3>Resume Analyzer (AI-powered)</h3>
-            <p>Use AI assistance to assess resumes, highlight issues, and guide profile improvement.</p>
+            <p>Assess resumes and improve profiles.</p>
           </article>
           <article class="service reveal">
             <i class="ri-chat-check-line" aria-hidden="true"></i>
             <h3>Mock Interviews &amp; Practice Tests</h3>
-            <p>Prepare students with structured interview practice and skill-building assessments.</p>
+            <p>Practice interviews and build confidence.</p>
           </article>
           <article class="service reveal">
             <i class="ri-bar-chart-grouped-line" aria-hidden="true"></i>
             <h3>Student Performance Analytics</h3>
-            <p>Track readiness, participation, and performance patterns with clear visual insights.</p>
+            <p>See readiness and performance clearly.</p>
           </article>
           <article class="service reveal">
             <i class="ri-speed-up-line" aria-hidden="true"></i>
             <h3>Interview Readiness Score</h3>
-            <p>Measure student preparedness with a focused score that supports training and placement decisions.</p>
+            <p>Measure student placement readiness.</p>
+          </article>
+          <article class="service reveal">
+            <i class="ri-notification-3-line" aria-hidden="true"></i>
+            <h3>Push Notifications</h3>
+            <p>Send timely job and interview alerts.</p>
           </article>
         </div>
       </div>
@@ -3054,39 +3302,39 @@
         <div class="section-head reveal">
           <span class="eyebrow">Our Services</span>
           <h2 style="margin-top: 14px;">Tailored digital solutions across products, platforms, and operational systems.</h2>
-          <p>We design, build, and support software systems that match the way institutions and businesses actually work.</p>
+          <p>Focused builds for real teams and real workflows.</p>
         </div>
 
         <div class="services">
           <article class="service reveal">
             <i class="ri-customer-service-2-line" aria-hidden="true"></i>
             <h3>CRM Development</h3>
-            <p>We build custom Customer Relationship Management systems to streamline business operations, improve customer engagement, and increase efficiency.</p>
+            <p>Custom CRM systems for cleaner operations.</p>
           </article>
           <article class="service reveal">
             <i class="ri-book-open-line" aria-hidden="true"></i>
             <h3>LMS Development</h3>
-            <p>We develop scalable Learning Management Systems for educational institutions and training centers to manage courses, assessments, and student performance.</p>
+            <p>Scalable LMS platforms for learning teams.</p>
           </article>
           <article class="service reveal">
             <i class="ri-team-line" aria-hidden="true"></i>
             <h3>HRM Systems</h3>
-            <p>Our HRM solutions simplify employee management, payroll, attendance tracking, and HR workflows.</p>
+            <p>HR workflows, payroll, and attendance.</p>
           </article>
           <article class="service reveal">
             <i class="ri-window-line" aria-hidden="true"></i>
             <h3>Web Application Development</h3>
-            <p>We create modern, scalable, and secure web applications using the latest technologies tailored to your business needs.</p>
+            <p>Modern web apps tailored to business needs.</p>
           </article>
           <article class="service reveal">
             <i class="ri-smartphone-line" aria-hidden="true"></i>
             <h3>Mobile App Development</h3>
-            <p>We build high-performance Android and iOS applications using cross-platform technologies like Flutter.</p>
+            <p>High-performance mobile apps.</p>
           </article>
           <article class="service reveal">
             <i class="ri-code-box-line" aria-hidden="true"></i>
             <h3>Custom Software Development</h3>
-            <p>We design and develop custom software solutions that align perfectly with your unique business requirements.</p>
+            <p>Software built around your exact workflow.</p>
           </article>
         </div>
       </div>
@@ -3097,29 +3345,29 @@
         <div class="section-head reveal">
           <span class="eyebrow">Who We Serve</span>
           <h2 style="margin-top: 14px;">Tailored digital systems for institutions, fast-moving teams, and growing businesses.</h2>
-          <p>We work with a wide range of clients to deliver tailored digital solutions:</p>
+          <p>Digital systems for growing organizations.</p>
         </div>
 
         <div class="client-grid">
           <article class="step reveal">
             <span class="step-no">1</span>
             <h3>Colleges &amp; Universities</h3>
-            <p>Digital platforms for placements, academics, administration, and student engagement.</p>
+            <p>Platforms for placements and academics.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">2</span>
             <h3>Training Institutes</h3>
-            <p>Learning, practice, and performance systems that help training teams operate at scale.</p>
+            <p>Learning and performance systems.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">3</span>
             <h3>Startups</h3>
-            <p>Web, mobile, and product builds designed to move quickly without losing structure.</p>
+            <p>Fast product builds with structure.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">4</span>
             <h3>Enterprises</h3>
-            <p>Operational software, automation, and business systems tailored to larger workflows.</p>
+            <p>Automation for complex workflows.</p>
           </article>
         </div>
       </div>
@@ -3136,27 +3384,27 @@
           <article class="step reveal">
             <span class="step-no">1</span>
             <h3>Product + Service Approach</h3>
-            <p>We don't just build projects, we create scalable products and solutions that can evolve with your organization.</p>
+            <p>Scalable products, not one-off builds.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">2</span>
             <h3>AI-Powered Solutions</h3>
-            <p>We integrate intelligent features to enhance performance, automation, and smarter decision-making.</p>
+            <p>Smarter automation and insights.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">3</span>
             <h3>Scalable Architecture</h3>
-            <p>Our systems are designed to grow with your organization, users, and future requirements.</p>
+            <p>Designed for future growth.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">4</span>
             <h3>Client-Centric Development</h3>
-            <p>We build solutions tailored to your exact requirements instead of forcing generic workflows.</p>
+            <p>Tailored to your workflow.</p>
           </article>
           <article class="step reveal">
             <span class="step-no">5</span>
             <h3>End-to-End Support</h3>
-            <p>From idea to deployment and maintenance, we support you through the full delivery journey.</p>
+            <p>Support from idea to launch.</p>
           </article>
         </div>
       </div>
@@ -3164,55 +3412,86 @@
 
     <section id="preview">
       <div class="container">
-        <div class="preview-stage reveal">
-          <div class="preview-copy">
-            <span class="eyebrow">A Dashboard built for <span class="gradient-text">Clarity</span></span>
-            <h2 style="margin-top: 14px;">One product view for placements, readiness, and student performance.</h2>
-            <p>Alphagrew brings dashboard clarity to both administrators and students, so the same system works across desktop review, live alerts, and mobile-first participation.</p>
+        <div class="section-head reveal">
+          <span class="eyebrow">Product Preview</span>
+          <h2 style="margin-top: 14px;">See how Alphagrew can look across core workflows.</h2>
+          <p>Simple views for important placement workflows.</p>
+        </div>
 
-            <div class="preview-actions">
-              <a class="btn primary" href="#contact">Request Demo</a>
-              <a class="btn" href="#product">View Product Flow</a>
+        <div class="product-stage reveal" aria-label="Animated Alphagrew product preview">
+          <div class="stage-phone left" aria-hidden="true">
+            <div class="phone-ui dark">
+              <div class="phone-meter">82%</div>
+              <div class="phone-ui-card">
+                <strong>Interview Ready</strong>
+                <small>Updated today</small>
+              </div>
+              <div class="phone-ui-card">
+                <strong>New Job Alert</strong>
+                <small>Applications open</small>
+              </div>
             </div>
           </div>
 
-          <div class="device-showcase" aria-hidden="true">
-            <div class="preview-float top">
-              <strong>Ready-to-place pipeline</strong>
-              <small>Review students, interview progress, and drive status without switching tools.</small>
-              <div class="preview-mini-grid">
-                <span>124 Active</span>
-                <span>38 Jobs</span>
-                <span>82% Ready</span>
-                <span>12 Alerts</span>
-              </div>
+          <div class="stage-screen" aria-hidden="true">
+            <div class="stage-browser">
+              <span>Alphagrew</span>
+              <span>Live Product</span>
             </div>
-
-            <div class="phone-shell">
-              <div class="phone-screen">
-                <div class="phone-header"></div>
-                <div class="phone-card">
-                  <strong>Interview Ready</strong>
-                  <small>Score updated after mock test</small>
+            <h3>Placement intelligence <span>with motion.</span></h3>
+            <p>Dashboards, student readiness, job workflows, and AI support in one polished product experience.</p>
+            <div class="stage-dashboard">
+              <div class="stage-chart">
+                <strong>Readiness Trend</strong>
+                <div class="stage-bars">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-                <div class="phone-card">
-                  <strong>New Job Alert</strong>
-                  <small>Application opens today</small>
-                </div>
-                <div class="phone-bottom"></div>
+              </div>
+              <div class="stage-ai">
+                <strong>AI Assist</strong>
+                <span>Resume gaps found</span>
+                <span>Mock score improved</span>
               </div>
             </div>
+          </div>
 
-            <div class="preview-float bottom">
-              <strong>Performance trend</strong>
-              <small>See readiness movement and identify where mentoring support is needed next.</small>
-              <div class="preview-bars">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+          <div class="stage-phone right" aria-hidden="true">
+            <div class="phone-ui">
+              <div class="phone-ui-card">
+                <strong>87</strong>
+                <small>Profile score</small>
+              </div>
+              <div class="phone-ui-card">
+                <strong>3 Jobs</strong>
+                <small>Matched today</small>
+              </div>
+              <div class="phone-ui-card">
+                <strong>2 Tests</strong>
+                <small>Pending practice</small>
               </div>
             </div>
+          </div>
+
+          <div class="stage-card top" aria-hidden="true">
+            <i class="ri-dashboard-3-line"></i>
+            <strong>Dashboard</strong>
+            <span>Placements at a glance</span>
+          </div>
+
+          <div class="stage-card bottom" aria-hidden="true">
+            <i class="ri-briefcase-4-line"></i>
+            <strong>Job Panel</strong>
+            <span>Applicants and rounds</span>
+          </div>
+
+          <div class="stage-actionbar" aria-hidden="true">
+            <span><i class="ri-phone-line"></i></span>
+            <span><i class="ri-chat-3-line"></i></span>
+            <span><i class="ri-bar-chart-grouped-line"></i></span>
           </div>
         </div>
       </div>
@@ -3223,13 +3502,13 @@
         <div class="section-head reveal">
           <span class="eyebrow">Get In Touch</span>
           <h2 style="margin-top: 14px;">Looking for a reliable technology partner or want to see a demo of our product?</h2>
-          <p>We'd love to hear from you.</p>
+          <p>Start with a quick demo.</p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card reveal">
             <h3>Request a Demo</h3>
-            <p style="margin-top: 12px;">Tell us about your institution, business, or software requirement and we'll get back to you.</p>
+            <p style="margin-top: 12px;">Tell us what you want to build.</p>
             <form id="contactForm">
               <div class="fields">
                 <div class="field">
@@ -3262,8 +3541,7 @@
 
           <aside class="contact-side reveal">
             <h3>Get In Touch</h3>
-            <p style="margin-top: 12px;">Looking for a reliable technology partner or want to see a demo of our product?</p>
-            <p>We'd love to hear from you.</p>
+            <p style="margin-top: 12px;">Book a demo or discuss a custom platform.</p>
             <div class="trust-line">Secure &bull; Scalable &bull; Reliable</div>
 
             <div class="contact-list">
@@ -3300,42 +3578,16 @@
       <div class="footer">
         <div class="footer-brand">
           <a class="brand-link" href="#home" aria-label="Chromolog home">
-            <img class="footer-logo" src="images/logo1.jpeg" alt="Chromolog Smart Digital Solutions logo" />
+            <img class="footer-logo" src="images/logoChro-display.jpeg" alt="Chromolog Technologies logo" />
           </a>
-          <p class="footer-note">Chromolog Pvt Ltd</p>
-          <p class="footer-note">Building Smart Digital Systems for Modern Organizations</p>
           <p class="footer-note">&copy; <span id="year"></span> Chromolog Pvt Ltd. All rights reserved.</p>
         </div>
 
         <div class="footer-nav">
-          <a href="#services" aria-label="Go to Services section">
-            <i class="ri-layout-grid-line" aria-hidden="true"></i>
-            <span>
-              <strong>Services</strong>
-              <small>CRM Development &bull; LMS Development &bull; HRM Systems &bull; Web &amp; Mobile Apps &bull; Custom Software</small>
-            </span>
-          </a>
-          <a href="#product" aria-label="Go to Product section">
-            <i class="ri-rocket-2-line" aria-hidden="true"></i>
-            <span>
-              <strong>Product</strong>
-              <small>Alphagrew</small>
-            </span>
-          </a>
-          <a href="#contact" aria-label="Go to Contact section">
-            <i class="ri-mail-line" aria-hidden="true"></i>
-            <span>
-              <strong>Contact</strong>
-              <small>info@chromolog.com</small>
-            </span>
-          </a>
-          <a href="#contact" aria-label="Request demo">
-            <i class="ri-calendar-check-line" aria-hidden="true"></i>
-            <span>
-              <strong>Demo</strong>
-              <small>Request Demo</small>
-            </span>
-          </a>
+          <a href="#about">About</a>
+          <a href="#product">Product</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -3348,6 +3600,7 @@
       var hamburger = document.getElementById("hamburger");
       var drawer = document.getElementById("drawer");
       var year = document.getElementById("year");
+      var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
       function hideLoader() {
         if (!loader || loader.classList.contains("is-hidden")) {
@@ -3403,6 +3656,87 @@
           form.reset();
         });
       }
+
+      var carousels = document.querySelectorAll("[data-carousel]");
+
+      carousels.forEach(function (carousel) {
+        var track = carousel.querySelector("[data-carousel-track]");
+        var slides = carousel.querySelectorAll("[data-carousel-slide]");
+        var dots = carousel.querySelectorAll("[data-carousel-dot]");
+        var prev = carousel.querySelector("[data-carousel-prev]");
+        var next = carousel.querySelector("[data-carousel-next]");
+        var index = 0;
+        var autoplayId = 0;
+
+        if (!track || !slides.length) {
+          return;
+        }
+
+        function render(nextIndex) {
+          index = (nextIndex + slides.length) % slides.length;
+          track.style.transform = "translateX(" + (-index * 100) + "%)";
+
+          dots.forEach(function (dot, dotIndex) {
+            var active = dotIndex === index;
+            dot.classList.toggle("is-active", active);
+            dot.setAttribute("aria-current", active ? "true" : "false");
+          });
+        }
+
+        function stopAutoplay() {
+          if (autoplayId) {
+            window.clearInterval(autoplayId);
+            autoplayId = 0;
+          }
+        }
+
+        function startAutoplay() {
+          stopAutoplay();
+
+          if (prefersReducedMotion.matches || slides.length < 2) {
+            return;
+          }
+
+          autoplayId = window.setInterval(function () {
+            render(index + 1);
+          }, 4600);
+        }
+
+        if (prev) {
+          prev.addEventListener("click", function () {
+            render(index - 1);
+            startAutoplay();
+          });
+        }
+
+        if (next) {
+          next.addEventListener("click", function () {
+            render(index + 1);
+            startAutoplay();
+          });
+        }
+
+        dots.forEach(function (dot, dotIndex) {
+          dot.addEventListener("click", function () {
+            render(dotIndex);
+            startAutoplay();
+          });
+        });
+
+        carousel.addEventListener("mouseenter", stopAutoplay);
+        carousel.addEventListener("mouseleave", startAutoplay);
+        carousel.addEventListener("focusin", stopAutoplay);
+        carousel.addEventListener("focusout", function () {
+          window.setTimeout(function () {
+            if (!carousel.contains(document.activeElement)) {
+              startAutoplay();
+            }
+          }, 0);
+        });
+
+        render(0);
+        startAutoplay();
+      });
 
       var items = document.querySelectorAll(".reveal");
 
